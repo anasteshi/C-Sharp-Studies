@@ -1,0 +1,14 @@
+/Users/anastasiiakholodiuk/Desktop/BroCode/BroCode/bin/Debug/net9.0/BroCode
+/Users/anastasiiakholodiuk/Desktop/BroCode/BroCode/bin/Debug/net9.0/BroCode.deps.json
+/Users/anastasiiakholodiuk/Desktop/BroCode/BroCode/bin/Debug/net9.0/BroCode.runtimeconfig.json
+/Users/anastasiiakholodiuk/Desktop/BroCode/BroCode/bin/Debug/net9.0/BroCode.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/BroCode/bin/Debug/net9.0/BroCode.pdb
+/Users/anastasiiakholodiuk/Desktop/BroCode/BroCode/obj/Debug/net9.0/BroCode.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anastasiiakholodiuk/Desktop/BroCode/BroCode/obj/Debug/net9.0/BroCode.AssemblyInfoInputs.cache
+/Users/anastasiiakholodiuk/Desktop/BroCode/BroCode/obj/Debug/net9.0/BroCode.AssemblyInfo.cs
+/Users/anastasiiakholodiuk/Desktop/BroCode/BroCode/obj/Debug/net9.0/BroCode.csproj.CoreCompileInputs.cache
+/Users/anastasiiakholodiuk/Desktop/BroCode/BroCode/obj/Debug/net9.0/BroCode.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/BroCode/obj/Debug/net9.0/refint/BroCode.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/BroCode/obj/Debug/net9.0/BroCode.pdb
+/Users/anastasiiakholodiuk/Desktop/BroCode/BroCode/obj/Debug/net9.0/BroCode.genruntimeconfig.cache
+/Users/anastasiiakholodiuk/Desktop/BroCode/BroCode/obj/Debug/net9.0/ref/BroCode.dll
