@@ -116,9 +116,54 @@
             // }
             
             
-            Console.WriteLine("Hello World!");
-            Console.ReadLine();
-            Console.WriteLine("Thank you for your input!");
+            
+            // a number guessing game!
+            
+            
+            
+            // Random random = new Random();
+            // bool playAgain = true;
+            // int guess;
+            // int number;
+            // int guesses;
+            // string response;
+            //
+            // while (playAgain)
+            // {
+            //     guess = 0;
+            //     number = random.Next(1, 101);
+            //     guesses = 0;
+            //     while (guess != number)
+            //     {
+            //         Console.Write("Guess a number between 1 and 100: ");
+            //         guess = Convert.ToInt32(Console.ReadLine());
+            //         Console.WriteLine("Guess: " + guess);
+            //         if (guess > number)
+            //         {
+            //             Console.WriteLine("Your guess is too high!");
+            //         }
+            //         else if (guess < number)
+            //         {
+            //             Console.WriteLine("Your guess is too low!");
+            //         }
+            //         guesses++;
+            //     }
+            //     Console.WriteLine("The number was: " + number);
+            //     Console.WriteLine("You won!");
+            //     Console.WriteLine("It took you " + guesses + " guesses to play!");
+            //     Console.WriteLine("Do you want to play again? Y/N");
+            //     response = Console.ReadLine();
+            //     response = response.ToUpper();
+            //     if (response == "Y" || response == "YES")
+            //     {
+            //         playAgain = true;
+            //     }
+            //     else
+            //     {
+            //         playAgain = false;
+            //     }
+            // }
+            // Console.WriteLine("Thank you!");
 
         }
     }
