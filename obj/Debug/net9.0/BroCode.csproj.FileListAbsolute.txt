@@ -12,3 +12,4 @@
 /Users/anastasiiakholodiuk/Desktop/BroCode/BroCode/obj/Debug/net9.0/BroCode.pdb
 /Users/anastasiiakholodiuk/Desktop/BroCode/BroCode/obj/Debug/net9.0/BroCode.genruntimeconfig.cache
 /Users/anastasiiakholodiuk/Desktop/BroCode/BroCode/obj/Debug/net9.0/ref/BroCode.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/BroCode/obj/Debug/net9.0/BroCode.sourcelink.json
