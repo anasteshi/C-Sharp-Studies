@@ -4,16 +4,16 @@
     {
         static void Main(string[] args)
         {
-            
-            
+
+
             // Console.WriteLine("Enter A: ");
             // double a = Convert.ToDouble(Console.ReadLine());
             // Console.WriteLine("Enter B: ");
             // double b = Convert.ToDouble(Console.ReadLine());
             // double c = Math.Sqrt(Math.Pow(a, 2) + Math.Pow(b, 2));
             // Console.WriteLine(c);
-            
-            
+
+
             // string fullName = "Ana";
             // Console.WriteLine(fullName.Replace(" ", "").ToLower().Insert(0, "@"));
             // String PhoneNumber = "099-946-400";
@@ -21,8 +21,8 @@
             // string firstName = "NAme" + fullName.Substring(0, 3);
             // string firstName = "Name" + (fullName.Length >= 3 ? fullName.Substring(3) : "");
             // Console.WriteLine(firstName);
-            
-            
+
+
             // Console.WriteLine("Input your age");
             // int age = Convert.ToInt32(Console.ReadLine());
             // switch (age)
@@ -37,8 +37,8 @@
             //         Console.WriteLine("You are a senior");
             //         break;
             // }
-            
-            
+
+
             // string input = "test";
             // var result = input switch
             // {
@@ -46,8 +46,8 @@
             //     _ => "Unknown" // Unreachable
             // };
             // Console.WriteLine(result);
-            
-            
+
+
             // Console.WriteLine("Input your age");
             // int age = Convert.ToInt32(Console.ReadLine());
             // string message = age switch
@@ -58,8 +58,8 @@
             //     _ => "You are a senior!"
             // };
             // Console.WriteLine(message);
-            
-            
+
+
             // Console.WriteLine("Input your age");
             // uint age = Convert.ToUInt32(Console.ReadLine());
             // uint num = 3;
@@ -78,8 +78,8 @@
             //         Console.WriteLine("Enter your real age...");
             //         break;
             // };
-            
-            
+
+
             // Console.Write("Enter your name: ");
             // string name = Console.ReadLine();
             // while (String.IsNullOrWhiteSpace(name))
@@ -88,8 +88,8 @@
             //     name = Console.ReadLine();
             // }
             // Console.WriteLine("Hello, " + name.Replace(" ", "") + "!");
-            
-            
+
+
             // string name = "";
             // while ( name == " " || String.IsNullOrWhiteSpace(name))
             // {
@@ -97,8 +97,8 @@
             //     name = Console.ReadLine();
             // }
             // Console.WriteLine("Hello, " + name.Replace(" ", "") + "!");
-            
-            
+
+
             // Console.Write("How many rows?: ");
             // int row = Convert.ToInt32(Console.ReadLine());
             // Console.Write("How many columns?: ");
@@ -114,13 +114,13 @@
             //     }
             //     Console.WriteLine();
             // }
-            
-            
-            
+
+
+
             // a number guessing game!
-            
-            
-            
+
+
+
             // Random random = new Random();
             // bool playAgain = true;
             // int guess;
@@ -164,108 +164,158 @@
             //     }
             // }
             // Console.WriteLine("Thank you!");
-            
-            
-            
-            
-            
+
+
+
+
+
             // ROCK, PAPER, SCISSORS!!!
-            Random choice = new Random();
-            bool PlayAgain = true;
-            string player;
-            string computer;
-            while (PlayAgain)
-            {
-                computer = "";
-                player = "";
-                while (player != "ROCK" && player != "PAPER" && player != "SCISSORS")
-                {
-                    Console.WriteLine("Enter your choice!!!: ");
-                    player = Console.ReadLine();
-                    player = player.ToUpper();
-                }
-
-                computer = choice.Next(1, 4).ToString();
-                switch (computer)
-                {
-                    case "1":
-                    {
-                        computer = "ROCK";
-                        break;
-                    }
-                    case "2":
-                    {
-                        computer = "PAPER";
-                        break;
-                    }
-                    default:
-                    {
-                        computer = "SCISSORS";
-                        break;
-                    }
-                }
-                Console.WriteLine("Player: " + player);
-                Console.WriteLine("Computer: " + computer);
-                switch (player)
-                {
-                    case "ROCK":
-                        if (computer == "ROCK")
-                        {
-                            Console.WriteLine("It's a draw!");
-                        }
-                        else if (computer == "PAPER")
-                        {
-                            Console.WriteLine("You lost! :(");
-                        }
-                        else
-                        {
-                            Console.WriteLine("You won! :)");
-                        }
-
-                        break;
-                    case "PAPER":
-                        if (computer == "ROCK")
-                        {
-                            Console.WriteLine("You won! :)");
-                        }
-                        else if (computer == "PAPER")
-                        {
-                            Console.WriteLine("It's a draw!");
-                        }
-                        else
-                        {
-                            Console.WriteLine("You lost! :(");
-                        }
-                        break;
-                    case "SCISSORS":
-                        if (computer == "ROCK")
-                        {
-                            Console.WriteLine("You lost! :(");
-                        }
-                        else if (computer == "PAPER")
-                        {
-                            Console.WriteLine("You won! :)");
-                        }
-                        else
-                        {
-                            Console.WriteLine("It's a draw!");
-                        }
-                        break;
-                }
-                Console.WriteLine("Do you want to continue? (Y/N)");
-                string response = Console.ReadLine();
-                response = response.ToUpper();
-                if (response == "Y")
-                {
-                    PlayAgain = true;
-                }
-                else
-                {
-                    PlayAgain = false;
-                }
-                
-            }
-
+            // Random choice = new Random();
+            // bool PlayAgain = true;
+            // string player;
+            // string computer;
+            // while (PlayAgain)
+            // {
+            //     computer = "";
+            //     player = "";
+            //     while (player != "ROCK" && player != "PAPER" && player != "SCISSORS")
+            //     {
+            //         Console.WriteLine("Enter your choice!!!: ");
+            //         player = Console.ReadLine();
+            //         player = player.ToUpper();
+            //     }
+            //
+            //     computer = choice.Next(1, 4).ToString();
+            //     switch (computer)
+            //     {
+            //         case "1":
+            //         {
+            //             computer = "ROCK";
+            //             break;
+            //         }
+            //         case "2":
+            //         {
+            //             computer = "PAPER";
+            //             break;
+            //         }
+            //         default:
+            //         {
+            //             computer = "SCISSORS";
+            //             break;
+            //         }
+            //     }
+            //     Console.WriteLine("Player: " + player);
+            //     Console.WriteLine("Computer: " + computer);
+            //     switch (player)
+            //     {
+            //         case "ROCK":
+            //             if (computer == "ROCK")
+            //             {
+            //                 Console.WriteLine("It's a draw!");
+            //             }
+            //             else if (computer == "PAPER")
+            //             {
+            //                 Console.WriteLine("You lost! :(");
+            //             }
+            //             else
+            //             {
+            //                 Console.WriteLine("You won! :)");
+            //             }
+            //
+            //             break;
+            //         case "PAPER":
+            //             if (computer == "ROCK")
+            //             {
+            //                 Console.WriteLine("You won! :)");
+            //             }
+            //             else if (computer == "PAPER")
+            //             {
+            //                 Console.WriteLine("It's a draw!");
+            //             }
+            //             else
+            //             {
+            //                 Console.WriteLine("You lost! :(");
+            //             }
+            //             break;
+            //         case "SCISSORS":
+            //             if (computer == "ROCK")
+            //             {
+            //                 Console.WriteLine("You lost! :(");
+            //             }
+            //             else if (computer == "PAPER")
+            //             {
+            //                 Console.WriteLine("You won! :)");
+            //             }
+            //             else
+            //             {
+            //                 Console.WriteLine("It's a draw!");
+            //             }
+            //             break;
+            //     }
+            //     Console.WriteLine("Do you want to continue? (Y/N)");
+            //     string response = Console.ReadLine();
+            //     response = response.ToUpper();
+            //     if (response == "Y")
+            //     {
+            //         PlayAgain = true;
+            //     }
+            //     else
+            //     {
+            //         PlayAgain = false;
+            //     }
+            // }
+            
+            
+            
+            //     CALCULATOR
+            
+            
+            // int num1;
+            // int num2;
+            // int result;
+            // do
+            // {
+            //     Console.Write("Enter first number: ");
+            //     num1 = Convert.ToInt32(Console.ReadLine());
+            //     Console.Write("Enter second number: ");
+            //     num2 = Convert.ToInt32(Console.ReadLine());
+            //     Console.WriteLine("\t- :Subtract");
+            //     Console.WriteLine("\t+ :Add");
+            //     Console.WriteLine("\t* :Multiply");
+            //     Console.WriteLine("\t/ :Divide");
+            //     Console.WriteLine("\t% :Modulus");
+            //     Console.Write("Enter an option: ");
+            //     switch (Console.ReadLine())
+            //     {
+            //         case "-":
+            //             result = num1 - num2;
+            //             Console.WriteLine(num1 + "-" + num2 + "=" + result);
+            //             break;
+            //         case "+":
+            //             result = num1 + num2;
+            //             Console.WriteLine(num1 + "+" + num2 + "=" + result);
+            //             break;
+            //         case "*":
+            //             result = num1 * num2;
+            //             Console.WriteLine(num1 + "*" + num2 + "=" + result);
+            //             break;
+            //         case "/":
+            //             result = num1 / num2;
+            //             Console.WriteLine(num1 + "/" + num2 + "=" + result);
+            //             break;
+            //         case "%":
+            //             result = num1 % num2;
+            //             Console.WriteLine(num1 + "%" + num2 + "=" + result);
+            //             break;
+            //         default:
+            //             Console.WriteLine("Invalid option");
+            //             break;
+            //     }
+            //
+            //     Console.WriteLine("Do you want to play again? (Y/N)");
+            // } while (Console.ReadLine().ToUpper() == "Y");
+            // Console.WriteLine("Thank you!");
+            // Console.ReadKey();
         }
     }
 }
