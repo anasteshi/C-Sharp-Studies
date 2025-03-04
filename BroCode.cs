@@ -316,6 +316,31 @@
             // } while (Console.ReadLine().ToUpper() == "Y");
             // Console.WriteLine("Thank you!");
             // Console.ReadKey();
+
+            
+            
+            
+            // Multidimensional arrays
+            
+            // String[] alphabet0 = { "A", "B", "C" };
+            // String[] alphabet1 = { "D", "E", "F" };
+            // String[] alphabet2 = { "G", "H", "I" };
+            // String[,] words = {{ "A", "B", "C" },
+            //                    { "D", "E", "F" },
+            //                    { "G", "H", "I" } };
+            // for (int i = 0; i < words.GetLength(0); i++)
+            // {
+            //     for (int j = 0; j < words.GetLength(1); j++)
+            //     {
+            //         Console.Write(words[i, j] + " ");
+            //     }
+            //     Console.WriteLine();
+            // }
+            
+            
+            
+            
+            
         }
     }
 }
