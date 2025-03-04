@@ -341,6 +341,65 @@
             
             
             
+            // CALCULATOR 2.0 USING CLASS AND METHODS
+            // bool play = true;
+            // string Continue;
+            // int c, d;
+            // while (play)
+            // {
+            //     Console.Write("Enter number c: " );
+            //     c = Convert.ToInt32(Console.ReadLine());
+            //     Console.Write("Enter number d: " );
+            //     d = Convert.ToInt32(Console.ReadLine());
+            //     Console.WriteLine("\tChoose an option");
+            //     Console.WriteLine("\t+ :ADD");
+            //     Console.WriteLine("\t- :SUBTRACT");
+            //     Console.WriteLine("\t* :MULTIPLY");
+            //     Console.WriteLine("\t/ :DIVIDE");
+            //     Console.WriteLine("\t% :MODULUS");
+            //     Console.WriteLine("\t^ :POWER");
+            //     Console.Write("Your option: ");
+            //     switch (Console.ReadLine())
+            //     {
+            //         case "+":
+            //             Console.WriteLine(MyClass.Add(c, d));
+            //             break;
+            //         case "-":
+            //             Console.WriteLine(MyClass.Subtract(c, d));
+            //             break;
+            //         case "*":
+            //             Console.WriteLine(MyClass.Multiply(c, d));
+            //             break;
+            //         case "/":
+            //             Console.WriteLine(MyClass.Divide(c, d));  
+            //             break;
+            //         case "%":
+            //             Console.WriteLine(MyClass.Modulus(c, d));
+            //             break;
+            //         case "^":
+            //             Console.WriteLine(MyClass.Power(c, d));
+            //             break;
+            //     }
+            //     Console.WriteLine("Wanna continue? (y/n)");
+            //     Continue = Console.ReadLine().ToUpper();
+            //     if (Continue == "Y")
+            //     {
+            //         play = true;
+            //     }
+            //     else if (Continue == "N")
+            //     {
+            //         play = false;
+            //     }
+            //     else
+            //     {
+            //         Console.WriteLine("Invalid input. Try again.");
+            //     }
+            // }   
+            //     
+            //
+            // Console.ReadKey();
+
         }
+
     }
 }
