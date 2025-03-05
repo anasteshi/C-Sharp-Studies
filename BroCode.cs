@@ -399,7 +399,18 @@
             //
             // Console.ReadKey();
 
-        }
+            // Car Car1 = new Car("Mustang", "Red");
+            // Car Car2 = new Car("Mustang", "Blue");
+            // Car Car3 = new Car("Mustang", "Green");
+            // Car.StartRace();
 
+            var account = new BankAccount("Anastasiia", 1000);
+            // BankAccount account2 = new BankAccount("Anastasiia", "0999446400", 1000); why not this one?
+            Console.WriteLine($"Account {account.Number} was created for {account.Owner} with {account.Balance} initial balance.");
+            
+
+
+        }
+        
     }
 }
