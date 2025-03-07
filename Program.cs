@@ -410,10 +410,15 @@
             var person = new Person
             {
                 Name = "Anastasiia",
-                Age = 11
+                Age = 18
                 
             };
             Person.Introduce(person.Name, person.Age);
+            var point = new Point(12, 10);
+            point.Move(null);    //a method Move(Point new Location) giving a Point object
+            Console.WriteLine($"{point.X} {point.Y}");
+            // point.Move(12, -1);     //a method Move(int x, int y) giving numbers, type int cannot be null
+            // Console.WriteLine($"{point.X} {point.Y}");
 
 
 
