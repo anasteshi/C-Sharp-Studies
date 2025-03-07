@@ -1,4 +1,6 @@
-﻿namespace BroCode
+﻿using Exception = System.Exception;
+
+namespace BroCode
 {
      internal class Program
     {
@@ -414,17 +416,51 @@
                 
             };
             Person.Introduce(person.Name, person.Age);
-            var point = new Point(12, 10);
-            point.Move(null);    //a method Move(Point new Location) giving a Point object
-            Console.WriteLine($"{point.X} {point.Y}");
-            // point.Move(12, -1);     //a method Move(int x, int y) giving numbers, type int cannot be null
-            // Console.WriteLine($"{point.X} {point.Y}");
+        }
 
+        static void UsePoints()
+        {
+            try
+            {
+                var point = new Point(12, 10);
+                point.Move(null);    //a method Move(Point new Location) giving a Point object
+                Console.WriteLine($"{point.X} {point.Y}");
+                point.Move(12, -1);     //a method Move(int x, int y) giving numbers, type int cannot be null
+                Console.WriteLine($"{point.X} {point.Y}");
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("An unexpected error occured.");
+            }
+        }
 
-
-
+        static void UseParamsModifier()
+        {
+            var calculator = new Calculator();
+            Console.WriteLine(calculator.Add(2, 34, 5, 12, 4)); //params is for giving only numbers instead of an actual array [1,2,3,4...] if it was ...Add(int[] numbers)
 
         }
-        
+
+        static void UseOutModifier()
+        {
+            try
+            {
+                var num = int.Parse("abc"); //if the string cannot be converted to int, the program crashes
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Conversion failed.");
+            }
+            int number;
+            var result = int.TryParse("123", out number); //here we declare a different number to "parse out from"
+            if (result)
+            {
+                Console.WriteLine($"The number {number} is a valid integer.");
+            }
+            else
+            {
+                Console.WriteLine("Conversion failed.");
+            }
+        }
     }
 }
