@@ -407,8 +407,13 @@
             var account = new BankAccount("Anastasiia", 1000);
             // BankAccount account2 = new BankAccount("Anastasiia", "0999446400", 1000); why not this one?
             Console.WriteLine($"Account {account.Number} was created for {account.Owner} with {account.Balance} initial balance.");
-            var person = new Person();
-            Person.Introduce("Ana", 18);
+            var person = new Person
+            {
+                Name = "Anastasiia",
+                Age = 11
+                
+            };
+            Person.Introduce(person.Name, person.Age);
 
 
 
