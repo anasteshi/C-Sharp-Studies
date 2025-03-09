@@ -1,6 +1,6 @@
 namespace BroCode;
 
-public static class MyClass
+public static class Calc
 {
     public static int Add(int a, int b)
     {

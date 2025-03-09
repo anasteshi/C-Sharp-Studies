@@ -364,22 +364,22 @@ namespace BroCode
             //     switch (Console.ReadLine())
             //     {
             //         case "+":
-            //             Console.WriteLine(MyClass.Add(c, d));
+            //             Console.WriteLine(Calc.Add(c, d));
             //             break;
             //         case "-":
-            //             Console.WriteLine(MyClass.Subtract(c, d));
+            //             Console.WriteLine(Calc.Subtract(c, d));
             //             break;
             //         case "*":
-            //             Console.WriteLine(MyClass.Multiply(c, d));
+            //             Console.WriteLine(Calc.Multiply(c, d));
             //             break;
             //         case "/":
-            //             Console.WriteLine(MyClass.Divide(c, d));  
+            //             Console.WriteLine(Calc.Divide(c, d));  
             //             break;
             //         case "%":
-            //             Console.WriteLine(MyClass.Modulus(c, d));
+            //             Console.WriteLine(Calc.Modulus(c, d));
             //             break;
             //         case "^":
-            //             Console.WriteLine(MyClass.Power(c, d));
+            //             Console.WriteLine(Calc.Power(c, d));
             //             break;
             //     }
             //     Console.WriteLine("Wanna continue? (y/n)");
@@ -443,6 +443,8 @@ namespace BroCode
             //     return;
             // }
             Console.WriteLine(account.GetAccountHistory());
+            var gun = new Gun();
+            gun.Shoot();
         }
 
         static void UsePoints()
@@ -488,6 +490,30 @@ namespace BroCode
             {
                 Console.WriteLine("Conversion failed.");
             }
+        }
+    }
+
+    public class Gun
+    {
+        private bool _isLoaded;
+
+        private void Reload()
+        {
+            Console.WriteLine("Reloading...");
+            _isLoaded = true;
+            Console.WriteLine("Successfully reloaded!");
+        }
+
+        public void Shoot()
+        {
+            if (!_isLoaded)
+            {
+                Console.WriteLine("The gun is not loaded yet.");
+                Reload();
+            }
+
+            Console.WriteLine("Boom! Boom!\n");
+            _isLoaded = false;
         }
     }
 }
