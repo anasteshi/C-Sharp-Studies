@@ -452,9 +452,9 @@ namespace BroCode
             try
             {
                 var point = new Point(12, 10);
-                point.Move(null);    //a method Move(Point new Location) giving a Point object
+                point.Move(12, 2);    //a method Move(Point new Location) giving a Point object
                 Console.WriteLine($"{point.X} {point.Y}");
-                point.Move(12, -1);     //a method Move(int x, int y) giving numbers, type int cannot be null
+                point.Move(new Point(1, 2));   //a method Move(int x, int y) giving numbers, type int cannot be null
                 Console.WriteLine($"{point.X} {point.Y}");
             }
             catch (Exception)
