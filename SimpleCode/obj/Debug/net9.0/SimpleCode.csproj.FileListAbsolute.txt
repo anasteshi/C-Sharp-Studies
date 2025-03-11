@@ -1,0 +1,14 @@
+/Users/anastasiiakholodiuk/Desktop/BroCode/SimpleCode/bin/Debug/net9.0/SimpleCode
+/Users/anastasiiakholodiuk/Desktop/BroCode/SimpleCode/bin/Debug/net9.0/SimpleCode.deps.json
+/Users/anastasiiakholodiuk/Desktop/BroCode/SimpleCode/bin/Debug/net9.0/SimpleCode.runtimeconfig.json
+/Users/anastasiiakholodiuk/Desktop/BroCode/SimpleCode/bin/Debug/net9.0/SimpleCode.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/SimpleCode/bin/Debug/net9.0/SimpleCode.pdb
+/Users/anastasiiakholodiuk/Desktop/BroCode/SimpleCode/obj/Debug/net9.0/SimpleCode.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anastasiiakholodiuk/Desktop/BroCode/SimpleCode/obj/Debug/net9.0/SimpleCode.AssemblyInfoInputs.cache
+/Users/anastasiiakholodiuk/Desktop/BroCode/SimpleCode/obj/Debug/net9.0/SimpleCode.AssemblyInfo.cs
+/Users/anastasiiakholodiuk/Desktop/BroCode/SimpleCode/obj/Debug/net9.0/SimpleCode.csproj.CoreCompileInputs.cache
+/Users/anastasiiakholodiuk/Desktop/BroCode/SimpleCode/obj/Debug/net9.0/SimpleCode.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/SimpleCode/obj/Debug/net9.0/refint/SimpleCode.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/SimpleCode/obj/Debug/net9.0/SimpleCode.pdb
+/Users/anastasiiakholodiuk/Desktop/BroCode/SimpleCode/obj/Debug/net9.0/SimpleCode.genruntimeconfig.cache
+/Users/anastasiiakholodiuk/Desktop/BroCode/SimpleCode/obj/Debug/net9.0/ref/SimpleCode.dll
