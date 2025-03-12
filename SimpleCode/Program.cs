@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Globalization;
 using System.Runtime.InteropServices;
 
 namespace SimpleCode;
@@ -7,7 +8,43 @@ class Program
 {
     static void Main(string[] args)
     {
-        Table();
+        // string str = Console.ReadLine();
+        // NumberFormatInfo nfi = new NumberFormatInfo();
+        // {
+        //     nfi.NumberDecimalSeparator = ".";
+        // }
+        // double a = double.Parse(str, nfi);
+        // Console.WriteLine(a);
+
+
+        // string str = Console.ReadLine();
+        // try
+        // {
+        //     int integer = int.Parse(str);
+        //     Console.WriteLine(integer);
+        //     Console.WriteLine("Conversation successful");
+        // }
+        // catch (Exception)
+        // {
+        //     Console.WriteLine("Conversation failed");
+        // }
+        
+        
+        string str = Console.ReadLine();
+        int a;
+        // int.TryParse(str, out a); //is not a correct way
+        bool result = int.TryParse(str, out a); //but that is 
+        if (result)
+        {
+            Console.WriteLine(result);
+            Console.WriteLine("\nConversation successful");
+        }
+        else
+        {
+            Console.WriteLine("\nConverstion failed");
+        }
+
+        // Table();
     }
 
     static void Table()

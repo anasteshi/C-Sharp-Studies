@@ -12,3 +12,4 @@
 /Users/anastasiiakholodiuk/Desktop/BroCode/SimpleCode/obj/Debug/net9.0/SimpleCode.pdb
 /Users/anastasiiakholodiuk/Desktop/BroCode/SimpleCode/obj/Debug/net9.0/SimpleCode.genruntimeconfig.cache
 /Users/anastasiiakholodiuk/Desktop/BroCode/SimpleCode/obj/Debug/net9.0/ref/SimpleCode.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/SimpleCode/obj/Debug/net9.0/SimpleCode.sourcelink.json
