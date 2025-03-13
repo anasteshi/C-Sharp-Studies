@@ -37,14 +37,44 @@ class Program
         if (result)
         {
             Console.WriteLine(result);
-            Console.WriteLine("\nConversation successful");
+            Console.WriteLine("\nOperation successful");
         }
         else
         {
-            Console.WriteLine("\nConverstion failed");
+            Console.WriteLine("\nOperation failed");
         }
+        Table();
+        // double c = 5; 
+        // int d = 6;
+        // double num = c / d;
+        
+        int c = 5; //alternative way
+        int d = 6;
+        double num = (double) c / d;
+        Console.WriteLine(num);
 
-        // Table();
+
+        // int fanSpeed = 0;
+        // bool isHighTemperature = false;
+        // bool hasNoCooling = fanSpeed <= 0;
+        // if (hasNoCooling || isHighTemperature)
+        // {
+        //     Console.WriteLine("\nHelp!!!");
+        // }
+
+        if (GetTemperatureStatus() || GetCoolingStatus())
+        {
+            Console.WriteLine("Help!!");
+        }
+        
+    }
+    public static bool GetCoolingStatus()
+    {
+        return true;
+    }
+    public static bool GetTemperatureStatus()
+    {
+        return true;
     }
 
     static void Table()
