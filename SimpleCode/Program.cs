@@ -268,15 +268,17 @@ class Program
         //     Console.WriteLine();
         // }
         
-                                    //nested loops #2
+        
+                                    //nested loops #2.1
 
-        Console.WriteLine("Enter symbol: ");
+                                    
+        Console.Write("Enter symbol: ");
         var symbol = Console.ReadLine();
         
-        Console.WriteLine("Enter height: ");
+        Console.Write("\nEnter height: ");
         int height = Convert.ToInt32(Console.ReadLine());
         
-        Console.WriteLine("Enter width: ");
+        Console.Write("\nEnter width: ");
         int width = Convert.ToInt32(Console.ReadLine());
         
         
@@ -290,10 +292,10 @@ class Program
         // }
         
         
-        // for (int i = 1; i <= height; i++)           // *
-        // {                                           // **
-        //     for (int j = 0; j < i; j++)             // ***
-        //     {                                       // ****
+        // for (int i = 0; i < height; i++)             // *
+        // {                                            // **
+        //     for (int j = 0; j <= i; j++)             // ***
+        //     {                                        // ****
         //         Console.Write(symbol);
         //         
         //     }
@@ -302,14 +304,14 @@ class Program
         
 
         // int count = --width;
-        // for (int i = 1; i <= height; i++)           //      *
+        // for (int i = 0; i < height; i++)            //      *
         // {                                           //     **
         //     for (int k = 0; k < count; k++)         //    ***
         //     {                                       //   ****
         //         Console.Write(" ");
         //     }
         //     count--;
-        //     for (int j = 0; j < i; j++)             
+        //     for (int j = 0; j <= i; j++)             
         //     {                                       
         //         Console.Write(symbol);
         //     }
@@ -331,7 +333,58 @@ class Program
         //     }
         //     Console.WriteLine();
         // }
-                                    
-                                    
+              
+        
+                                    //nested loops #2.2
+        
+        
+        // for (int i = 0; i < height; i++)           // ****
+        // {                                          // ***
+        //     for (int j = width; j > i; j--)        // **
+        //     {                                      // *
+        //         Console.Write(symbol);
+        //     }
+        //     Console.WriteLine();
+        // }         
+        
+        
+        // for (int i = 0; i < height; i++)             // 1   *
+        // {                                            //    **
+        //     for (int j = width; j > i; j--)          //   ***
+        //     {                                        //  ****
+        //         Console.Write(" ");
+        //     }
+        //     for (int j = 0; j <= i; j++)             
+        //     {                                        
+        //         Console.Write(symbol);
+        //         
+        //     }
+        //     Console.WriteLine();
+        // }
+        
+        
+        // for (int i = 0; i < height; i++)                                    // 2    *
+        // {                                                                   //     **
+        //     Console.SetCursorPosition(height - i, i + 6);                   //    ***
+        //     for (int j = 0; j <= i; j++)                                    //   ****
+        //     {                                        
+        //         Console.Write(symbol);
+        //         
+        //     }
+        // }
+        
+        
+        // for (int i = 0; i < height; i++)        //     ****
+        // {                                       //      ***
+        //     for (int j = 0; j <= i; j++)        //       **
+        //     {                                   //        *
+        //         Console.Write(" ");
+        //     }
+        //     for (int j = i; j < width; j++)     
+        //     {                                  
+        //         Console.Write(symbol);
+        //     }
+        //     Console.WriteLine();
+        // }
     }
 }
