@@ -6,77 +6,6 @@ namespace SimpleCode;
 
 class Program
 {
-    static void Main(string[] args)
-    {
-        // string str = Console.ReadLine();
-        // NumberFormatInfo nfi = new NumberFormatInfo();
-        // {
-        //     nfi.NumberDecimalSeparator = ".";
-        // }
-        // double a = double.Parse(str, nfi);
-        // Console.WriteLine(a);
-
-
-        // string str = Console.ReadLine();
-        // try
-        // {
-        //     int integer = int.Parse(str);
-        //     Console.WriteLine(integer);
-        //     Console.WriteLine("Conversation successful");
-        // }
-        // catch (Exception)
-        // {
-        //     Console.WriteLine("Conversation failed");
-        // }
-        
-        
-        string str = Console.ReadLine();
-        int a;
-        // int.TryParse(str, out a); //is not a correct way
-        bool result = int.TryParse(str, out a); //but that is 
-        if (result)
-        {
-            Console.WriteLine(result);
-            Console.WriteLine("\nOperation successful");
-        }
-        else
-        {
-            Console.WriteLine("\nOperation failed");
-        }
-        Table();
-        // double c = 5; 
-        // int d = 6;
-        // double num = c / d;
-        
-        int c = 5; //alternative way
-        int d = 6;
-        double num = (double) c / d;
-        Console.WriteLine(num);
-
-
-        // int fanSpeed = 0;
-        // bool isHighTemperature = false;
-        // bool hasNoCooling = fanSpeed <= 0;
-        // if (hasNoCooling || isHighTemperature)
-        // {
-        //     Console.WriteLine("\nHelp!!!");
-        // }
-
-        if (GetTemperatureStatus() || GetCoolingStatus())
-        {
-            Console.WriteLine("Help!!");
-        }
-        
-    }
-    public static bool GetCoolingStatus()
-    {
-        return true;
-    }
-    public static bool GetTemperatureStatus()
-    {
-        return true;
-    }
-
     static void Table()
     {
         string msg = "Тип {0, 8} |\t.NET {1, 8} |\tРозмір = {2} \t|\t MIN = {3, 30}\t| MAX = {4}";
@@ -106,5 +35,151 @@ class Program
         Console.WriteLine("\n\t\t\t\t\tСПЕЦІАЛЬНІ ТИПИ:\n");
         Console.WriteLine(string.Format(msg, "object", nameof(Object), "N/A", "N/A", "N/A"));
         Console.WriteLine(string.Format(msg, "dynamic", "N/A", "N/A", "N/A", "N/A"));
+    }
+    public static bool GetCoolingStatus()
+    {
+        return true;
+    }
+    public static bool GetTemperatureStatus()
+    {
+        return false;
+    }
+    static void Main(string[] args)
+    {
+                                    //string parsing
+        
+        // string str = Console.ReadLine();
+        // NumberFormatInfo nfi = new NumberFormatInfo();
+        // {
+        //     nfi.NumberDecimalSeparator = ".";
+        // }
+        // double a = double.Parse(str, nfi);
+        // Console.WriteLine(a);
+
+
+        // string str = Console.ReadLine();
+        // try
+        // {
+        //     int integer = int.Parse(str);
+        //     Console.WriteLine(integer);
+        //     Console.WriteLine("Conversation successful");
+        // }
+        // catch (Exception)
+        // {
+        //     Console.WriteLine("Conversation failed");
+        // }
+        
+                                    //string tryparsing
+        
+        // string str = Console.ReadLine();
+        // int a;
+        // int.TryParse(str, out a); //is not a correct way
+        // bool result = int.TryParse(str, out a); //but that is 
+        // if (result)
+        // {
+        //     Console.WriteLine(result);
+        //     Console.WriteLine("\nOperation successful");
+        // }
+        // else
+        // {
+        //     Console.WriteLine("\nOperation failed");
+        // }
+        
+        // Table();
+        
+                                    //arithmetic operators
+        
+        // double c = 5; 
+        // int d = 6;
+        // double num = c / d;
+        
+        // int c = 5; //alternative way
+        // int d = 6;
+        // double num = (double) c / d;
+        // Console.WriteLine(num);
+        
+                                    //if with bools
+
+        // int fanSpeed = 0;
+        // bool isHighTemperature = false;
+        // bool hasNoCooling = fanSpeed <= 0;
+        // if (hasNoCooling || isHighTemperature)
+        // {
+        //     Console.WriteLine("\nHelp!!!");
+        // }
+
+                                    //same task but with methods
+        
+        // if (!GetTemperatureStatus())
+        // {
+        //     Console.WriteLine("Help!!");
+        // }
+        
+                                    //switch
+        
+        // for (int i = 0; i < 4; i++)
+        // {
+        //     ConsoleKey key = Console.ReadKey().Key;
+        //     switch (key)
+        //     {
+        //         case ConsoleKey.A:
+        //             Console.WriteLine("\nYou pressed A");
+        //             break;
+        //         case ConsoleKey.B:
+        //             Console.WriteLine("\nYou pressed B");
+        //             break;
+        //         case ConsoleKey.R:
+        //             Console.WriteLine("\nYou pressed R");
+        //             break;
+        //     }
+        // }
+        
+                                    //calculator using switch
+                                    
+        double firstValue, secondValue;
+        string action;
+        while (true)
+        {
+            Console.Clear();
+            try
+            {
+                Console.WriteLine("\nEnter first value: ");
+                firstValue = double.Parse(Console.ReadLine());
+                Console.WriteLine("\nEnter second value: ");
+                secondValue = double.Parse(Console.ReadLine());
+                Console.WriteLine("\nEnter action '+', '-', '*', '/': ");
+                action = Console.ReadLine();
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Oops!");
+                Console.ReadKey();
+                continue; //the code below will not be executed
+            }
+            switch (action)
+            {
+                case "+":
+                    Console.WriteLine(firstValue + secondValue);
+                    break;
+                case "-":
+                    Console.WriteLine(firstValue - secondValue);
+                    break;
+                    
+                case "*":
+                    Console.WriteLine(firstValue * secondValue);
+                    break;
+                    
+                case "/":
+                    if (secondValue == 0) //we can remove {} cuz there's only one line of code to be executed
+                        Console.WriteLine("\nYou can't divide by 0");
+                    else
+                        Console.WriteLine(firstValue / secondValue);
+                    break;
+                default:
+                    Console.WriteLine("\nInvalid action!");
+                    break;
+            }
+            Console.ReadKey();
+        }
     }
 }
