@@ -268,7 +268,70 @@ class Program
         //     Console.WriteLine();
         // }
         
+                                    //nested loops #2
 
+        Console.WriteLine("Enter symbol: ");
+        var symbol = Console.ReadLine();
         
+        Console.WriteLine("Enter height: ");
+        int height = Convert.ToInt32(Console.ReadLine());
+        
+        Console.WriteLine("Enter width: ");
+        int width = Convert.ToInt32(Console.ReadLine());
+        
+        
+        // for (int i = 0; i < height; i++)        // ****
+        // {                                       // ***
+        //     for (int j = i; j < width; j++)     // **
+        //     {                                   // *
+        //         Console.Write(symbol);
+        //     }
+        //     Console.WriteLine();
+        // }
+        
+        
+        // for (int i = 1; i <= height; i++)           // *
+        // {                                           // **
+        //     for (int j = 0; j < i; j++)             // ***
+        //     {                                       // ****
+        //         Console.Write(symbol);
+        //         
+        //     }
+        //     Console.WriteLine();
+        // }
+        
+
+        // int count = --width;
+        // for (int i = 1; i <= height; i++)           //      *
+        // {                                           //     **
+        //     for (int k = 0; k < count; k++)         //    ***
+        //     {                                       //   ****
+        //         Console.Write(" ");
+        //     }
+        //     count--;
+        //     for (int j = 0; j < i; j++)             
+        //     {                                       
+        //         Console.Write(symbol);
+        //     }
+        //     Console.WriteLine();
+        // }
+        
+        
+        // int count = 0;
+        // for (int i = 0; i < height; i++)        //     ****
+        // {                                       //      ***
+        //     for (int k = 0; k < count; k++)     //       **
+        //     {                                   //        *
+        //         Console.Write(" ");
+        //     } 
+        //     count++;
+        //     for (int j = i; j < width; j++)     
+        //     {                                  
+        //         Console.Write(symbol);
+        //     }
+        //     Console.WriteLine();
+        // }
+                                    
+                                    
     }
 }
