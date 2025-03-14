@@ -30,11 +30,26 @@ class Program
         Console.WriteLine(string.Format(msg, "string", nameof(String), "N/A", "N/A", "N/A"));
 
         Console.WriteLine("\n\t\t\t\t\tЛОГІЧНИЙ ТИП:\n");
-        Console.WriteLine(string.Format(msg, "bool", nameof(Boolean), sizeof(bool), "False", "True"));
+        Console.WriteLine(msg, "bool", nameof(Boolean), sizeof(bool), "False", "True");
         
         Console.WriteLine("\n\t\t\t\t\tСПЕЦІАЛЬНІ ТИПИ:\n");
-        Console.WriteLine(string.Format(msg, "object", nameof(Object), "N/A", "N/A", "N/A"));
-        Console.WriteLine(string.Format(msg, "dynamic", "N/A", "N/A", "N/A", "N/A"));
+        Console.WriteLine(msg, "object", nameof(Object), "N/A", "N/A", "N/A");
+        Console.WriteLine(msg, "dynamic", "N/A", "N/A", "N/A", "N/A");
+    }
+
+    static int[,] GetRandomArray(int row, int column)
+    {
+        Random random = new Random();
+        var result = new int[row, column];
+        for (int i = 0; i < row; i++)
+        {
+            for (int j = 0; j < column; j++)
+            {
+                result[i, j] = random.Next(10);
+            }
+        }
+        return result;
+        
     }
     public static bool GetCoolingStatus()
     {
@@ -136,50 +151,124 @@ class Program
         
                                     //calculator using switch
                                     
-        double firstValue, secondValue;
-        string action;
-        while (true)
-        {
-            Console.Clear();
-            try
-            {
-                Console.WriteLine("\nEnter first value: ");
-                firstValue = double.Parse(Console.ReadLine());
-                Console.WriteLine("\nEnter second value: ");
-                secondValue = double.Parse(Console.ReadLine());
-                Console.WriteLine("\nEnter action '+', '-', '*', '/': ");
-                action = Console.ReadLine();
-            }
-            catch (Exception)
-            {
-                Console.WriteLine("Oops!");
-                Console.ReadKey();
-                continue; //the code below will not be executed
-            }
-            switch (action)
-            {
-                case "+":
-                    Console.WriteLine(firstValue + secondValue);
-                    break;
-                case "-":
-                    Console.WriteLine(firstValue - secondValue);
-                    break;
-                    
-                case "*":
-                    Console.WriteLine(firstValue * secondValue);
-                    break;
-                    
-                case "/":
-                    if (secondValue == 0) //we can remove {} cuz there's only one line of code to be executed
-                        Console.WriteLine("\nYou can't divide by 0");
-                    else
-                        Console.WriteLine(firstValue / secondValue);
-                    break;
-                default:
-                    Console.WriteLine("\nInvalid action!");
-                    break;
-            }
-            Console.ReadKey();
-        }
+        // double firstValue, secondValue;
+        // string action;
+        // while (true)
+        // {
+        //     Console.Clear();
+        //     try
+        //     {
+        //         Console.WriteLine("\nEnter first value: ");
+        //         firstValue = double.Parse(Console.ReadLine());
+        //         Console.WriteLine("\nEnter second value: ");
+        //         secondValue = double.Parse(Console.ReadLine());
+        //         Console.WriteLine("\nEnter action '+', '-', '*', '/': ");
+        //         action = Console.ReadLine();
+        //     }
+        //     catch (Exception)
+        //     {
+        //         Console.WriteLine("Oops!");
+        //         Console.ReadKey();
+        //         continue; //the code below will not be executed
+        //     }
+        //     switch (action)
+        //     {
+        //         case "+":
+        //             Console.WriteLine(firstValue + secondValue);
+        //             break;
+        //         case "-":
+        //             Console.WriteLine(firstValue - secondValue);
+        //             break;
+        //             
+        //         case "*":
+        //             Console.WriteLine(firstValue * secondValue);
+        //             break;
+        //             
+        //         case "/":
+        //             if (secondValue == 0) //we can remove {} cuz there's only one line of code to be executed
+        //                 Console.WriteLine("\nYou can't divide by 0");
+        //             else
+        //                 Console.WriteLine(firstValue / secondValue);
+        //             break;
+        //         default:
+        //             Console.WriteLine("\nInvalid action!");
+        //             break;
+        //     }
+        //     Console.ReadKey();
+        
+                                    //while loop – even and odd numbers
+        
+        // Console.WriteLine("Enter start number");
+        // int startNumber = int.Parse(Console.ReadLine());                            
+        // Console.WriteLine("Enter limit number");
+        // int limit = int.Parse(Console.ReadLine());
+        // uint evenCount = 0;
+        // uint oddCount = 0;
+        // int evenSum = 0;
+        // int oddSum = 0;
+        // while (startNumber <= limit)
+        // {
+        //     Console.WriteLine(startNumber);
+        //     if (startNumber % 2 == 0)
+        //     {
+        //         evenCount++;
+        //         evenSum += startNumber;
+        //     }
+        //     else
+        //     {
+        //         oddCount++;
+        //         oddSum += startNumber;
+        //     }
+        //     startNumber++;
+        // }
+        // Console.WriteLine($"Even numbers: {evenCount}");
+        // Console.WriteLine($"Odd numbers: {oddCount}");
+        // Console.WriteLine($"Sum of even numbers: {evenSum}");
+        // Console.WriteLine($"Sum of odd numbers: {oddSum}");
+        
+                                    //for loop
+
+        // for (int i = 0; i < 5; ++i)
+        // {
+        //     Console.WriteLine(i);
+        //     System.Threading.Thread.Sleep(300);
+        // }
+        
+                                    //nested for loops
+
+        // Console.WriteLine("Enter symbol: ");
+        // var symbol = Console.ReadLine();
+        // Console.WriteLine("Enter height: ");
+        // int height = Convert.ToInt32(Console.ReadLine());
+        // Console.WriteLine("Enter width: ");
+        // int width = Convert.ToInt32(Console.ReadLine());
+        //
+        // for (int i = 0; i < height; i++)
+        // {
+        //     Console.WriteLine();
+        //     for (int j = 0; j < width; j++)
+        //     {
+        //         Console.Write("*");
+        //     }
+        // }
+
+                                    //nested loops #1
+        
+        // Random random = new Random();
+        // int rows = random.Next(1, 10); ;
+        // int columns = random.Next(1, 10);
+        // var myArray = GetRandomArray(rows, columns);
+        // for (int i = 0; i < rows; i++)
+        // {
+        //     for (int j = 0; j < columns; j++)
+        //     {
+        //         Console.Write($"\t{myArray[i, j]}");
+        //     }
+        //     Console.WriteLine();
+        //     Console.WriteLine();
+        // }
+        
+
+        
     }
 }
