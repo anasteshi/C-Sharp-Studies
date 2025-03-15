@@ -473,17 +473,34 @@ class Program
         // }
         // Console.WriteLine(maxValue);
         
-        // int[] array = {1,2,3,4,5,6,7,8,9,10};
+        
+        // int[] array = {1,2,3,4,4,6,4,8,8,1};
         // Console.WriteLine(array.Max());
         // Console.WriteLine(array.Min());
         // Console.WriteLine(array.Sum());
         // Console.WriteLine(array.Where((i) => i % 2 == 0).Sum());
         // Console.WriteLine(array.Where((i) => i % 2 != 1).Min());
+        // int[] result = array.Distinct().ToArray(); //unique elements
+        // int[] result = array.OrderBy(i => i).ToArray(); //from smallest to greatest
+        // int[] result = array.OrderByDescending(i => i).ToArray(); //from greatest to smallest 
+        // Array.Sort(array); //from smallest to greatest
+        // Array.Reverse(array);
+        // Array.Find(array, i => i < 5); //finds first needed element from left 
+        // Array.FindLast(array, i => i < 5); //finds first needed element from right 
+        // int[] result = Array.FindAll(array, i => i < 5); //finds an array of needed elements
+        // int index = Array.FindIndex(array, i => i == 8); //finds index of an element that matches left to right
+        // int index = Array.FindLastIndex(array, i => i == 8); //finds index of an element that matches right to left
+       
+        // int index1 = array.Where(i => i != 8).First(); //using methods finds an element
 
-
+        // int index1 = array.First(i => i != 8); //a simpler version
+        // int index1 = array.FirstOrDefault(i => i != 8); //for dealing with exception 
+        // int[] result = array.Where(i => i < 5).ToArray();
+        
+        
                                     //ex. <unique values of an array>
-        
-        
+
+
         // int[] array = { 1, 2, 3, 4, 2, 2, 3, 4 };
         // int newArrayLength = 0;
         // int uniqueNumber = 0;
@@ -528,10 +545,10 @@ class Program
         // {
         //     Console.Write(uniqueArray[i]+" ");
         // }
-        
-        
-        
-        
-        
+
+
+
+
+
     }
 }
