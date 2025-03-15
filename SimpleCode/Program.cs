@@ -1,8 +1,4 @@
-﻿using System.Drawing;
-using System.Globalization;
-using System.Runtime.InteropServices;
-
-namespace SimpleCode;
+﻿namespace SimpleCode;
 
 class Program
 {
@@ -272,14 +268,14 @@ class Program
                                     //nested loops #2.1
 
                                     
-        Console.Write("Enter symbol: ");
-        var symbol = Console.ReadLine();
-        
-        Console.Write("\nEnter height: ");
-        int height = Convert.ToInt32(Console.ReadLine());
-        
-        Console.Write("\nEnter width: ");
-        int width = Convert.ToInt32(Console.ReadLine());
+        // Console.Write("Enter symbol: ");
+        // var symbol = Console.ReadLine();
+        //
+        // Console.Write("\nEnter height: ");
+        // int height = Convert.ToInt32(Console.ReadLine());
+        //
+        // Console.Write("\nEnter width: ");
+        // int width = Convert.ToInt32(Console.ReadLine());
         
         
         // for (int i = 0; i < height; i++)        // ****
@@ -386,5 +382,156 @@ class Program
         //     }
         //     Console.WriteLine();
         // }
+        
+        
+                                    //ternary operator
+                                    
+        // string storedPassword = "qwerty";
+        // string enteredPassword = Console.ReadLine();
+        // bool accessAllowed;
+        // // if (enteredPassword == storedPassword) //with if-else tho else is redundant 
+        // //     accessAllowed = true;
+        // // accessAllowed = enteredPassword == storedPassword; //the best way
+        // accessAllowed = enteredPassword == storedPassword? true : false; //redundant way
+        // // Console.WriteLine(enteredPassword == storedPassword); //or just that
+        // Console.WriteLine(accessAllowed);
+        
+        
+        // int inputNumber = int.Parse(Console.ReadLine());
+        // int outputNumber = (inputNumber >= 0) ? inputNumber : 0;
+        // Console.WriteLine(outputNumber);
+        
+        
+                                    //arrays
+        
+        // int[] array = new[]{1,2,3,4,5};
+        // Console.WriteLine(array.ElementAt(1)); // what's the difference between cw(array[1]) and this?
+        // Console.WriteLine(array[2]);
+        // int[] array = {11, 22, 33, 44}; //another way of initialization 
+        // int[] array = Enumerable.Repeat(1, 6).ToArray(); //repeat elements without using loops
+        // int[] array = Enumerable.Range(1, 10).ToArray(); //fills array with 10 values, starting from 1
+        
+        
+        // int[] array = { 12, 12, 23, 4, 6, 7 };
+        // for (int i = 0; i < array.Length; i++)
+        // {
+        //     Console.WriteLine(array[i]);
+        // }
+
+
+        // Console.Write("Enter size of array: ");
+        // int size = Convert.ToInt32(Console.ReadLine());
+        // int[] array = new int[size]; //array from input
+        // for (int i = 0; i < size; i++)
+        // {
+        //     Console.Write($"\nEnter array[{i}]: ");
+        //     array[i] = Convert.ToInt32(Console.ReadLine());
+        // }
+        // for (int i = 0; i < size; i++)
+        // {
+        //     Console.Write($"{array[i]} ");
+        // }
+
+        
+        // int[] array = {1,2,3,4,5}; //reverse array
+        // for (int i = array.Length - 1; i > 0; i--)
+        // {
+        //     Console.WriteLine(array[i]);
+        // }
+        
+        
+        // int[] array = {1,2,3,4,5}; //sum of even numbers
+        // int evenSum = 0;
+        // for (int i = 0; i < array.Length; i++)
+        // { 
+        //     if (array[i] % 2 == 0)
+        //         evenSum += array[i];
+        // }
+        // Console.WriteLine(evenSum);
+        
+        
+        // int[] array = {-1,2,3,4,-5}; //min value
+        // int minValue = array[0];
+        // for (int i = 0; i < array.Length; i++)
+        // {
+        //     if (array[i] <= minValue)
+        //     {
+        //         minValue = array[i];
+        //     }
+        // }
+        // Console.WriteLine(minValue);
+        
+        
+        // int[] array = {-1,2,3,4,-5}; //max value
+        // int maxValue = array[0];
+        // for (int i = 0; i < array.Length; i++)
+        // {
+        //     if (array[i] > maxValue)
+        //     {
+        //         maxValue = array[i];
+        //     }
+        // }
+        // Console.WriteLine(maxValue);
+        
+        // int[] array = {1,2,3,4,5,6,7,8,9,10};
+        // Console.WriteLine(array.Max());
+        // Console.WriteLine(array.Min());
+        // Console.WriteLine(array.Sum());
+        // Console.WriteLine(array.Where((i) => i % 2 == 0).Sum());
+        // Console.WriteLine(array.Where((i) => i % 2 != 1).Min());
+
+
+                                    //ex. <unique values of an array>
+        
+        
+        // int[] array = { 1, 2, 3, 4, 2, 2, 3, 4 };
+        // int newArrayLength = 0;
+        // int uniqueNumber = 0;
+        //
+        // for (int i = 0; i < array.Length; i++)
+        // {
+        //     int uniqueCheck = 0;
+        //     for (int j = 0; j <= i; j++)
+        //     {
+        //         if (array[j] == array[i])
+        //         {
+        //             uniqueCheck++;
+        //         }
+        //     }
+        //     if (uniqueCheck == 1)
+        //     {
+        //         newArrayLength++;
+        //     }
+        // }
+        //
+        // int[] uniqueArray = new int[newArrayLength];
+        //
+        //                      // output unique array
+        //
+        // for (int i = 0; i < array.Length; i++)
+        // {
+        //     int uniqueCheck = 0;
+        //     for (int j = 0; j <= i; j++)
+        //     {
+        //         if (array[j] == array[i])
+        //         {
+        //             uniqueCheck++;
+        //         }
+        //     }
+        //     if (uniqueCheck == 1)
+        //     {
+        //         uniqueArray[uniqueNumber] = array[i];
+        //         uniqueNumber++;
+        //     }
+        // }
+        // for (int i = 0; i < uniqueArray.Length; i++)
+        // {
+        //     Console.Write(uniqueArray[i]+" ");
+        // }
+        
+        
+        
+        
+        
     }
 }
