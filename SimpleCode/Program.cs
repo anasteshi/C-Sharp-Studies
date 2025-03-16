@@ -584,5 +584,22 @@ class Program
         // string str = "Success";
         // Console.WriteLine(str[^1]); //string is an array of chars, basically – s
         // Console.WriteLine(str[^2..]); //ss
+        
+        
+                                    //multidimensional arrays
+                                    
+                                    
+        // int [,] array = new int[4, 3];
+        // int [,] array =     //we can remove new int [,]
+        // {
+        //     { 1, 2, 3},
+        //     {4, 5, 63},
+        //     {4, 2, 3},
+        //     {1, 1, 1}
+        // };
+        // array[1, 1] = 9;
+        // Console.WriteLine(array[1, 1]);
+        
+        
     }
 }
