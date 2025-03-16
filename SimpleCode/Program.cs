@@ -547,8 +547,42 @@ class Program
         // }
 
 
+                                    //indices and ranges
 
+        // int[] array = {1,2,23,22,12,5,3,21,1,53,23,43432,0,23};
+        // Console.WriteLine(array[array.Length - 1]); //instead of this = 23
+        // Console.WriteLine(array[^1]); //we use this = 23
+        // int[] array1 = array[1..9]; //from 1 to 8 the last index is exclusive
+        // int[] array2 = array[..8]; //from 0 to 7
+        // int[] array3 = array[..]; //gets all elements
+        
+                                    //index struct
 
-
+        // Index index; //just declaration array4 = {int[]} int[3] Explore
+        // Index index = ^3; //third index from the end
+        
+                    //or
+        
+        // Index index = new Index(3,false); //'instance' of Index struct
+        // Console.WriteLine(array[index]); //43432 or 22
+        
+                                    //range struct
+                                    
+        // Range range = 1..4;
+        
+                    //or
+                    
+        // Range range = new Range(1,4); //basically 1..4 so there are Index struct values inside range
+        // Range range = ^4..^1; //23, 43432, 0
+        // Int32 a = new Int32(); //same as Int32 a = 0; hence Index, Range structs are just like Int32, String etc 
+        // int[] array4 = array[range]; //indices from 1 to 4 (exclusive)
+         
+                                    
+                                    //ranges and indices for string
+                                    
+                                    
+        // string str = "Success";
+        // Console.WriteLine(str[^1]); //string is an array of chars, basically – s
+        // Console.WriteLine(str[^2..]); //ss
     }
 }
