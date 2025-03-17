@@ -599,7 +599,102 @@ class Program
         // };
         // array[1, 1] = 9;
         // Console.WriteLine(array[1, 1]);
+        // foreach (var arr in array)
+        // {
+        //     Console.Write(arr + " ");
+        // }
+        // int[,] array = new int[3, 5];
+        // array.GetLength(0); //dimensions
+        // array.Rank(); //doesnt work??
+        // for (int i = 0; i < array.GetLength(0); i++)         //is okay but not valid in OOP
+        // {
+        //     for (int j = 0; j < array.GetLength(1); j++)
+        //     {   
+        //         array[i, j] = random.Next(10);
+        //         Console.Write(array[i, j] + " ");
+        //     }
+        //
+        //     Console.WriteLine();
+        // }
         
         
+                                    //random array
+        
+        
+        // int[,] array = new int[3, 5];
+        // Random random = new Random();
+        // for (int i = 0; i < array.GetLength(0); i++)    //but that is. SOLID principle    
+        // {
+        //     for (int j = 0; j < array.GetLength(1); j++)
+        //     {   
+        //         array[i, j] = random.Next(10);
+        //     }
+        //
+        //     Console.WriteLine();
+        // }
+        //
+        // for (int i = 0; i < array.GetLength(0); i++)         
+        // {
+        //     for (int j = 0; j < array.GetLength(1); j++)
+        //     {
+        //         Console.Write(array[i, j] + " ");
+        //     }
+        //
+        //     Console.WriteLine();
+        // }
+        
+        
+                                    //input array
+                                    
+                                
+        // int[,] array = new int[3, 3];
+        // for (int i = 0; i < array.GetLength(0); i++)    
+        // {
+        //     for (int j = 0; j < array.GetLength(1); j++)
+        //     {   
+        //         array[i, j] = int.Parse(Console.ReadLine());
+        //     }
+        //
+        //     Console.WriteLine();
+        // }
+        //
+        // Console.WriteLine();
+        //  
+        // for (int i = 0; i < array.GetLength(0); i++)         
+        // {
+        //     for (int j = 0; j < array.GetLength(1); j++)
+        //     {
+        //         Console.Write(array[i, j] + " ");
+        //     }
+        //
+        //     Console.WriteLine();
+        // }
+        
+        
+                                    //input str array
+                                    
+                                    
+        string[,] array = new string[3, 3];
+        for (int i = 0; i < array.GetLength(0); i++)    
+        {
+            for (int j = 0; j < array.GetLength(1); j++)
+            {   
+                array[i, j] = Console.ReadLine();
+            }
+        
+            Console.WriteLine();
+        }
+
+        Console.WriteLine();
+         
+        for (int i = 0; i < array.GetLength(0); i++)         
+        {
+            for (int j = 0; j < array.GetLength(1); j++)
+            {
+                Console.Write(array[i, j] + " ");
+            }
+        
+            Console.WriteLine();
+        }
     }
 }
