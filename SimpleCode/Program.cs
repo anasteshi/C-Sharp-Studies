@@ -674,27 +674,63 @@ class Program
                                     //input str array
                                     
                                     
-        string[,] array = new string[3, 3];
-        for (int i = 0; i < array.GetLength(0); i++)    
-        {
-            for (int j = 0; j < array.GetLength(1); j++)
-            {   
-                array[i, j] = Console.ReadLine();
-            }
+        // string[,] array = new string[3, 3];
+        // for (int i = 0; i < array.GetLength(0); i++)    
+        // {
+        //     for (int j = 0; j < array.GetLength(1); j++)
+        //     {   
+        //         array[i, j] = Console.ReadLine();
+        //     }
+        //
+        //     Console.WriteLine();
+        // }
+        //
+        // Console.WriteLine();
+        //  
+        // for (int i = 0; i < array.GetLength(0); i++)         
+        // {
+        //     for (int j = 0; j < array.GetLength(1); j++)
+        //     {
+        //         Console.Write(array[i, j] + " ");
+        //     }
+        //
+        //     Console.WriteLine();
+        // }
         
-            Console.WriteLine();
-        }
-
-        Console.WriteLine();
+        
+                                    //jagged arrays
+                                    
+                                    
+        int [][] array = new int[3][]; //array of array
+        Console.WriteLine(array.Rank);
+        array[0] = new int[3];
+        array[1] = new int[5];
+        array[2] = new int[1];
          
-        for (int i = 0; i < array.GetLength(0); i++)         
-        {
-            for (int j = 0; j < array.GetLength(1); j++)
-            {
-                Console.Write(array[i, j] + " ");
-            }
+        // array[0][2] = 55;
+        //
+        // int[] arr = array[0];
+        //
+        // Console.WriteLine(arr[2]);
         
-            Console.WriteLine();
+        Random random = new Random();
+        for (int i = 0; i < array.Length; i++)
+        {
+            for (int j = 0; j < array[i].Length; j++)
+            {
+                array[i][j] = random.Next(10);
+            }
         }
+        
+        for (int i = 0; i < array.Length; i++)
+        {
+            for (int j = 0; j < array[i].Length; j++)
+            {
+                Console.Write(array[i][j]);
+            }
+            Console.WriteLine(); 
+        }
+        
+        
     }
 }
