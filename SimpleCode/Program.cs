@@ -701,36 +701,89 @@ class Program
                                     //jagged arrays
                                     
                                     
-        int [][] array = new int[3][]; //array of array
-        Console.WriteLine(array.Rank);
-        array[0] = new int[3];
-        array[1] = new int[5];
-        array[2] = new int[1];
-         
-        // array[0][2] = 55;
+        // int [][] array = new int[3][]; //array of array
+        // Console.WriteLine(array.Rank);
+        // array[0] = new int[3];
+        // array[1] = new int[5];
+        // array[2] = new int[1];
+        //  
+        // // array[0][2] = 55;
+        // //
+        // // int[] arr = array[0];
+        // //
+        // // Console.WriteLine(arr[2]);
         //
-        // int[] arr = array[0];
+        // Random random = new Random();
+        // for (int i = 0; i < array.Length; i++)
+        // {
+        //     for (int j = 0; j < array[i].Length; j++)
+        //     {
+        //         array[i][j] = random.Next(10);
+        //     }
+        // }
         //
-        // Console.WriteLine(arr[2]);
+        // for (int i = 0; i < array.Length; i++)
+        // {
+        //     for (int j = 0; j < array[i].Length; j++)
+        //     {
+        //         Console.Write(array[i][j]);
+        //     }
+        //     Console.WriteLine(); 
+        // }
         
+        
+                                    //3-D arrays and more
+                                    
+                                    
+        // int[,] array2D = new int[3, 3]; //2D array
+        // int[,,] array3D = new int[3, 3, 3]; 
+        // array3D[0, 0, 0] = 1;
+        // Console.WriteLine(array3D.Rank);
+        // int[,,] array3D =
+        // {
+        //     {
+        //         {3,2,1},
+        //         {3,2,2},
+        //         {3,2,3} 
+        //     },
+        //     {   {3,2,1},
+        //         {3,5,6},
+        //         {3,8,4}
+        //     },
+        //     {   {3,2,1},
+        //         {4,2,2},
+        //         {1,2,0}
+        //     }
+        // };
+        
+        
+        int[,,] array = new int[4, 3, 2];
         Random random = new Random();
-        for (int i = 0; i < array.Length; i++)
+        for (int i = 0; i < array.GetLength(0) ; i++)
         {
-            for (int j = 0; j < array[i].Length; j++)
+            for (int j = 0; j < array.GetLength(1); j++)
             {
-                array[i][j] = random.Next(10);
+                for (int k = 0; k < array.GetLength(2); k++)
+                {
+                    array[i, j, k] = random.Next(10);
+                }
             }
         }
         
-        for (int i = 0; i < array.Length; i++)
+        for (int i = 0; i < array.GetLength(0) ; i++)
         {
-            for (int j = 0; j < array[i].Length; j++)
+            Console.WriteLine("Page number: "+ (i+1));
+            for (int j = 0; j < array.GetLength(1); j++)
             {
-                Console.Write(array[i][j]);
+                for (int k = 0; k < array.GetLength(2); k++)
+                {
+                    Console.Write(array[i, j, k] + " ");
+                }
+
+                Console.WriteLine();
             }
-            Console.WriteLine(); 
         }
-        
-        
+        int[][][] jaggedArray = new int[random.Next(1,10)][][]; //only first [] is filled cuz it's a jagged array
+        Console.WriteLine(jaggedArray.Rank);
     }
 }
