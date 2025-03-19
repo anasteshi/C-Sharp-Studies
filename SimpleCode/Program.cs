@@ -55,6 +55,16 @@ class Program
     {
         return false;
     }
+
+    static int MathOperation(int a, int b)
+    {
+        return a + b;
+    }
+
+    static void PrintResult(int result)
+    {
+        Console.WriteLine("\t" + result);
+    }
     static void Main(string[] args)
     {
                                     //string parsing
@@ -757,33 +767,42 @@ class Program
         // };
         
         
-        int[,,] array = new int[4, 3, 2];
-        Random random = new Random();
-        for (int i = 0; i < array.GetLength(0) ; i++)
-        {
-            for (int j = 0; j < array.GetLength(1); j++)
-            {
-                for (int k = 0; k < array.GetLength(2); k++)
-                {
-                    array[i, j, k] = random.Next(10);
-                }
-            }
-        }
+        // int[,,] array = new int[4, 3, 2];
+        // Random random = new Random();
+        // for (int i = 0; i < array.GetLength(0) ; i++)
+        // {
+        //     for (int j = 0; j < array.GetLength(1); j++)
+        //     {
+        //         for (int k = 0; k < array.GetLength(2); k++)
+        //         {
+        //             array[i, j, k] = random.Next(10);
+        //         }
+        //     }
+        // }
+        //
+        // for (int i = 0; i < array.GetLength(0) ; i++)
+        // {
+        //     Console.WriteLine("Page number: "+ (i+1));
+        //     for (int j = 0; j < array.GetLength(1); j++)
+        //     {
+        //         for (int k = 0; k < array.GetLength(2); k++)
+        //         {
+        //             Console.Write(array[i, j, k] + " ");
+        //         }
+        //
+        //         Console.WriteLine();
+        //     }
+        // }
+        // int[][][] jaggedArray = new int[random.Next(1,10)][][]; //only first [] is filled cuz it's a jagged array
+        // Console.WriteLine(jaggedArray.Rank);
         
-        for (int i = 0; i < array.GetLength(0) ; i++)
-        {
-            Console.WriteLine("Page number: "+ (i+1));
-            for (int j = 0; j < array.GetLength(1); j++)
-            {
-                for (int k = 0; k < array.GetLength(2); k++)
-                {
-                    Console.Write(array[i, j, k] + " ");
-                }
+        
+                                    //methods
 
-                Console.WriteLine();
-            }
-        }
-        int[][][] jaggedArray = new int[random.Next(1,10)][][]; //only first [] is filled cuz it's a jagged array
-        Console.WriteLine(jaggedArray.Rank);
+
+        int value1 = int.Parse(Console.ReadLine());
+        int value2 = int.Parse(Console.ReadLine());
+        int finalValue = MathOperation(value1, value2);
+        PrintResult(finalValue);
     }
 }
