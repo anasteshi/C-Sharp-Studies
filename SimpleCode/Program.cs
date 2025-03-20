@@ -122,6 +122,13 @@ class Program
     {
         return a + b;
     }
+
+    static int[] Array()
+    {   
+        //or int[] array = either null or new int[sth];
+        //return array;
+        return null;
+    }
     static void Main(string[] args)
     {
                                     //string parsing
@@ -882,8 +889,29 @@ class Program
                                     //method overload
 
 
-        Console.WriteLine(Sum(34, 45));
+        // Console.WriteLine(Sum(34, 45));
 
 
+                                    //null operator ??
+                                    
+                                    
+        // string str = null;
+        // string result = str ?? "Error!";
+        // Console.WriteLine(result);
+        //
+        // string result = str ?? string.Empty; //same as "" assigns this value to result, while str is still null
+        // Console.WriteLine($"The number of symbols is: {result.Length}"); 
+        
+        
+                                    //null operator ??=
+                                    
+                            
+        // string str = null;
+        // str ??= string.Empty; //here ??= assigns the value we need to the former variable
+        // Console.WriteLine(str);
+
+        int[] arrayINeed = Array();
+        arrayINeed??= new int[12];
+        Console.WriteLine(arrayINeed.Length);
     }
 }
