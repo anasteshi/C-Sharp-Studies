@@ -65,6 +65,63 @@ class Program
     {
         Console.WriteLine("\t" + result);
     }
+    
+    static void OutputLine(string symbol, uint size)
+    {
+        for (uint i = 0; i < size; i++)
+        {
+            Console.Write(symbol + "\t");
+        }
+    }
+    static void OutputChar(char symbol, uint size)
+    {
+        for (uint i = 0; i < size; i++)
+        {
+            Console.Write(symbol + "\t");
+        }
+    }
+
+    static int FindIndex(int[] array, int number)
+    {
+        for (int i = 0; i < array.Length; i++)
+        {
+            if (array[i] == number)
+                return i;
+        }
+        return -1;
+    }
+
+    static int[] RandomArray(uint length, int min, int max)
+    {
+        int[] array = new int[length];
+        Random random = new Random();
+        for (int i = 0; i < length; i++)
+        {
+            array[i] = random.Next(min, max);
+        }
+        return array;
+    }
+
+    /// <summary>
+    /// Sums two given numbers
+    /// </summary>
+    /// <param name="a">int</param>
+    /// <param name="b">int</param>
+    /// <returns>int Sum</returns>
+    static int Sum(int a, int b)
+    {
+        return a + b;
+    }
+
+    static int Sum(int a, int b, int c)
+    {
+        return a + b + c;
+    }
+
+    static double Sum(double a, double b)
+    {
+        return a + b;
+    }
     static void Main(string[] args)
     {
                                     //string parsing
@@ -800,9 +857,33 @@ class Program
                                     //methods
 
 
-        int value1 = int.Parse(Console.ReadLine());
-        int value2 = int.Parse(Console.ReadLine());
-        int finalValue = MathOperation(value1, value2);
-        PrintResult(finalValue);
+        // int value1 = int.Parse(Console.ReadLine());
+        // int value2 = int.Parse(Console.ReadLine());
+        // int finalValue = MathOperation(value1, value2);
+        // PrintResult(finalValue);
+
+        // Console.Write("Enter a line: ");
+        // string input = Console.ReadLine();
+        // Console.Write("Enter size: ");
+        // uint size = uint.Parse(Console.ReadLine());
+        // OutputLine(input, size);
+        //
+        // Console.Write("\nEnter a symbol: ");
+        // char symbol = Console.ReadKey().KeyChar;
+        // Console.Write("\nEnter symbols count: ");
+        // uint symbolCount = Convert.ToUInt32(Console.ReadLine());
+        // OutputChar(symbol, symbolCount);
+
+        
+        // int[] arrayRandom = RandomArray(5, 19, 50);
+        // Console.WriteLine(FindIndex(arrayRandom, 34));
+        
+        
+                                    //method overload
+
+
+        Console.WriteLine(Sum(34, 45));
+
+
     }
 }
