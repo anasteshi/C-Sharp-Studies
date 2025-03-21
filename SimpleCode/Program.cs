@@ -184,6 +184,30 @@ class Program
                                     
         Insert(ref arr, element, arr.Length);
     }
+
+    static void DeleteElement(ref int[] arr, int index)
+    {
+        int[] array = new int[arr.Length - 1];
+        for (int i = 0; i < index; i++)
+        {
+            array[i] = arr[i];
+        }
+
+        for (int i = index + 1; i < arr.Length; i++)
+        {
+            array[i-1] = arr[i];
+        }
+        arr = array;
+    }
+
+    static void DeleteFirst(ref int[] arr)
+    {
+        DeleteElement(ref arr, 0);
+    }
+    static void DeleteLast(ref int[] arr)
+    {
+        DeleteElement(ref arr, arr.Length - 1);
+    }
     static void Main(string[] args)
     {
                                     //string parsing
@@ -980,8 +1004,15 @@ class Program
 
 
                                     //add an element to the array
+        // int[] array = { 2, 1, 5, 23 };
+        //  
+        // InsertLast(ref array, 99);
+        
+        
+                                    //delete an array
+                                    
+                                    
         int[] array = { 2, 1, 5, 23 };
-         
-        InsertLast(ref array, 99);
+        DeleteElement(ref array, 2);
     }
 }
