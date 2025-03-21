@@ -129,6 +129,61 @@ class Program
         //return array;
         return null;
     }
+
+    static void ResizeArray(ref int[] arr, uint size)
+    {
+        int[] newArray = new int[size];
+        for (int i = 0; i < arr.Length && i < newArray.Length; i++)
+        {
+            newArray[i] = arr[i];
+        }
+        arr = newArray;
+    }
+
+    static void Insert(ref int[] arr, int element, int index)
+    {
+        int[] array = new int[arr.Length + 1];
+        array[index] = element;
+        for (int i = 0; i < index; i++)
+        {
+            array[i] = arr[i];
+        }
+
+        for (int i = index; i < arr.Length; i++)
+        {
+            array[i+1] = arr[i];
+        }
+        arr = array;
+    }
+
+    static void InsertFirst(ref int[] arr, int element)
+    {
+        // int[] array = new int[arr.Length + 1];
+        // array[0] = element;
+        // for (int i = 1; i < array.Length; i++)
+        // {
+        //     array[i] = arr[i-1];
+        // }
+        // arr = array;
+        
+                                    //or
+                                    
+        Insert(ref arr, element, 0);
+    }
+    static void InsertLast(ref int[] arr, int element)
+    {
+        // int[] array = new int[arr.Length + 1];
+        // array[arr.Length] = element;
+        // for (int i = arr.Length - 1; i >= 0; i--)
+        // {
+        //     array[i] = arr[i];
+        // }
+        // arr = array;
+        
+                                    //or
+                                    
+        Insert(ref arr, element, arr.Length);
+    }
     static void Main(string[] args)
     {
                                     //string parsing
@@ -910,8 +965,23 @@ class Program
         // str ??= string.Empty; //here ??= assigns the value we need to the former variable
         // Console.WriteLine(str);
 
-        int[] arrayINeed = Array();
-        arrayINeed??= new int[12];
-        Console.WriteLine(arrayINeed.Length);
+        // int[] arrayINeed = Array();
+        // arrayINeed??= new int[12];
+        // Console.WriteLine(arrayINeed.Length);
+
+
+                                    //resize an array
+        
+                                    
+        // int[] array = { 2, 3, 5, 33 };
+        // Console.Write("Enter preferred size: ");
+        // uint size = Convert.ToUInt32(Console.ReadLine());
+        // ResizeArray(ref array, size);
+
+
+                                    //add an element to the array
+        int[] array = { 2, 1, 5, 23 };
+         
+        InsertLast(ref array, 99);
     }
 }
