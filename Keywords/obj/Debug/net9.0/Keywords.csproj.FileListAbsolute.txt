@@ -1,0 +1,15 @@
+/Users/anastasiiakholodiuk/Desktop/BroCode/Keywords/bin/Debug/net9.0/Keywords
+/Users/anastasiiakholodiuk/Desktop/BroCode/Keywords/bin/Debug/net9.0/Keywords.deps.json
+/Users/anastasiiakholodiuk/Desktop/BroCode/Keywords/bin/Debug/net9.0/Keywords.runtimeconfig.json
+/Users/anastasiiakholodiuk/Desktop/BroCode/Keywords/bin/Debug/net9.0/Keywords.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/Keywords/bin/Debug/net9.0/Keywords.pdb
+/Users/anastasiiakholodiuk/Desktop/BroCode/Keywords/obj/Debug/net9.0/Keywords.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anastasiiakholodiuk/Desktop/BroCode/Keywords/obj/Debug/net9.0/Keywords.AssemblyInfoInputs.cache
+/Users/anastasiiakholodiuk/Desktop/BroCode/Keywords/obj/Debug/net9.0/Keywords.AssemblyInfo.cs
+/Users/anastasiiakholodiuk/Desktop/BroCode/Keywords/obj/Debug/net9.0/Keywords.csproj.CoreCompileInputs.cache
+/Users/anastasiiakholodiuk/Desktop/BroCode/Keywords/obj/Debug/net9.0/Keywords.sourcelink.json
+/Users/anastasiiakholodiuk/Desktop/BroCode/Keywords/obj/Debug/net9.0/Keywords.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/Keywords/obj/Debug/net9.0/refint/Keywords.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/Keywords/obj/Debug/net9.0/Keywords.pdb
+/Users/anastasiiakholodiuk/Desktop/BroCode/Keywords/obj/Debug/net9.0/Keywords.genruntimeconfig.cache
+/Users/anastasiiakholodiuk/Desktop/BroCode/Keywords/obj/Debug/net9.0/ref/Keywords.dll
