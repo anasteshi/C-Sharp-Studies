@@ -34,6 +34,17 @@ class Program
     static void Raba(MyStruct value)
     {
     }
+
+                                //params keyword
+    
+    static void MyMethod(params object[] parameters)
+    {
+        string message = "Type: {0} | Item: {1}";
+        foreach (var item in parameters)
+        {
+            Console.WriteLine(message, item.GetType(), item);;
+        }
+    }
     
 
     static void Main(string[] args)
@@ -58,26 +69,31 @@ class Program
         
                                     //speed test in and w/o in keyword
                                     
-        MyStruct myStruct = new MyStruct();
-        Stopwatch sw = Stopwatch.StartNew();
-        for (int i = 0; i < int.MaxValue; i++)
-        {
-            Abar(myStruct);
-            Console.WriteLine(i+1);
-        }
-        sw.Stop();
-        Console.Clear();
-        Console.WriteLine($"With in keyword: {sw.Elapsed}");
-        Console.ReadKey();
-        sw.Restart();
-        for (int i = 0; i < int.MaxValue; i++)
-        {
-            Raba(myStruct);
-            Console.WriteLine(i+1);
-        }
-        sw.Stop();
-        Console.Clear();
-        Console.WriteLine($"Without in keyword: {sw.Elapsed}");
-
+        // MyStruct myStruct = new MyStruct();
+        // Stopwatch sw = Stopwatch.StartNew();
+        // for (int i = 0; i < int.MaxValue; i++)
+        // {
+        //     Abar(myStruct);
+        //     Console.WriteLine(i+1);
+        // }
+        // sw.Stop();
+        // Console.Clear();
+        // Console.WriteLine($"With in keyword: {sw.Elapsed}");
+        // Console.ReadKey();
+        // sw.Restart();
+        // for (int i = 0; i < int.MaxValue; i++)
+        // {
+        //     Raba(myStruct);
+        //     Console.WriteLine(i+1);
+        // }
+        // sw.Stop();
+        // Console.Clear();
+        // Console.WriteLine($"Without in keyword: {sw.Elapsed}");
+        
+        
+                                    //params keyword
+                                    
+        
+        MyMethod("My name is Anastasiia", 18, "A", "D", true);
     }
 } 
