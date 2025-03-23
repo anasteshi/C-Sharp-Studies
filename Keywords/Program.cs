@@ -46,7 +46,34 @@ class Program
         }
     }
     
+                                //optional parameters
 
+    static int Sum(int a, int b, bool enableLogging = false) //is optional bc it's already initialized 
+    {
+        int result = a + b;
+        if (enableLogging)
+        {
+            Console.WriteLine($"A: {a}");
+            Console.WriteLine($"B: {b}");
+            Console.WriteLine($"Sum: {result}");
+        }
+        return result;
+    }
+              
+                                //named parameters
+
+    static int Subtract(int a, int b, bool enableLogging = false)
+    {
+        int result = a - b;
+        if (enableLogging)
+        {
+            Console.WriteLine($"A: {a}");
+            Console.WriteLine($"B: {b}");
+            Console.WriteLine($"Subtraction: {result}");
+        }
+        return result;
+    }
+    
     static void Main(string[] args)
     {
                                     //keyword out and ref differences 
@@ -94,6 +121,27 @@ class Program
                                     //params keyword
                                     
         
-        MyMethod("My name is Anastasiia", 18, "A", "D", true);
+        // MyMethod("My name is Anastasiia", 18, "A", "D", true);
+        
+        
+                                    //optional parameters
+
+
+        // Sum(5, 3); //doesn't display anything
+        // Sum(4,65, true); 
+        
+        
+                                    //named parameters
+                                    
+                                    
+        Subtract(b:8, a:2); //the order doesn't matter
+        Subtract(b:4, a:10, enableLogging:true);
+        //======================================
+        int firstValue = 34;
+        int secondValue = 50;
+        Subtract(secondValue, firstValue, enableLogging:true); //easy to see what some variables are meant to store 
+        
+        
+                                    //recursion 
     }
 } 
