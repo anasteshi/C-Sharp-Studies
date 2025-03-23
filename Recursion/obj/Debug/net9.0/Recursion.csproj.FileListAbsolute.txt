@@ -1,0 +1,15 @@
+/Users/anastasiiakholodiuk/Desktop/BroCode/Recursion/bin/Debug/net9.0/Recursion
+/Users/anastasiiakholodiuk/Desktop/BroCode/Recursion/bin/Debug/net9.0/Recursion.deps.json
+/Users/anastasiiakholodiuk/Desktop/BroCode/Recursion/bin/Debug/net9.0/Recursion.runtimeconfig.json
+/Users/anastasiiakholodiuk/Desktop/BroCode/Recursion/bin/Debug/net9.0/Recursion.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/Recursion/bin/Debug/net9.0/Recursion.pdb
+/Users/anastasiiakholodiuk/Desktop/BroCode/Recursion/obj/Debug/net9.0/Recursion.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anastasiiakholodiuk/Desktop/BroCode/Recursion/obj/Debug/net9.0/Recursion.AssemblyInfoInputs.cache
+/Users/anastasiiakholodiuk/Desktop/BroCode/Recursion/obj/Debug/net9.0/Recursion.AssemblyInfo.cs
+/Users/anastasiiakholodiuk/Desktop/BroCode/Recursion/obj/Debug/net9.0/Recursion.csproj.CoreCompileInputs.cache
+/Users/anastasiiakholodiuk/Desktop/BroCode/Recursion/obj/Debug/net9.0/Recursion.sourcelink.json
+/Users/anastasiiakholodiuk/Desktop/BroCode/Recursion/obj/Debug/net9.0/Recursion.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/Recursion/obj/Debug/net9.0/refint/Recursion.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/Recursion/obj/Debug/net9.0/Recursion.pdb
+/Users/anastasiiakholodiuk/Desktop/BroCode/Recursion/obj/Debug/net9.0/Recursion.genruntimeconfig.cache
+/Users/anastasiiakholodiuk/Desktop/BroCode/Recursion/obj/Debug/net9.0/ref/Recursion.dll
