@@ -140,8 +140,5 @@ class Program
         int firstValue = 34;
         int secondValue = 50;
         Subtract(secondValue, firstValue, enableLogging:true); //easy to see what some variables are meant to store 
-        
-        
-                                    //recursion 
     }
 } 
