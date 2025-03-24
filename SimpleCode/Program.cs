@@ -1014,5 +1014,35 @@ class Program
                                     
         int[] array = { 2, 1, 5, 23 };
         DeleteElement(ref array, 2);
+        
+        
+                                    //implicit and explicit type conversion
+
+
+        int a = 5;
+        float b = a;
+        //==========
+        double c = 4.6;
+        float d = (float)c; //explicit conversion
+                            //float d = c doesn't work bc float has smaller range than double
+        //===================================================================================
+        int e = 3;
+        byte f = (byte)e; //byte is smaller than int
+        //==========================================
+        byte g = 234;
+        int h = g; //ok 
+        //=============
+        int i = 3;
+        bool j = Convert.ToBoolean(i); //if 0 is false else true
+        //======================================================
+        int k = 23;
+        float l = 2.3F;
+        float result = k + l; //OK
+        //but=====================
+        int result1 = (int)(k + l); //or k + (int)l
+
+
+
+
     }
 }
