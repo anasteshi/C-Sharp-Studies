@@ -1042,7 +1042,59 @@ class Program
         int result1 = (int)(k + l); //or k + (int)l
 
 
+                                    //arithmetic overflow / overflow – nuclear Gandhi
 
 
+        // byte aggresion = 1;
+        // byte democracyModifier = 2;
+        // aggresion = (byte)(aggresion - democracyModifier); //explicit conversion
+        // Console.WriteLine(aggresion);
+        //================================
+        int max = int.MaxValue;
+        max++;
+        Console.WriteLine(max);
+        int min = int.MinValue;
+        min--;
+        Console.WriteLine(min);
+        //=====================
+        //but if enable arithmetic overflow in proj build settings, there'll be an exception instead
+        //tho it significantly slows down the process
+        //instead might do this:
+        //============================ checked keyword ================================
+        byte aggression = 1;
+        byte democracyModifier = 2;
+        // aggression = checked((byte)(aggression - democracyModifier)); //checked key word
+        //or =========================================================================
+        // checked
+        // {
+        //     aggression = (byte)(aggression - democracyModifier);
+        // }
+        //============================ unchecked keyword ================================
+        // aggression = unchecked((byte)(aggression - democracyModifier)); //checked key word
+        // unchecked
+        // {
+        //     aggression = (byte)(aggression - democracyModifier);
+        // }
+        // Console.WriteLine(aggression);
+        //============================ try catch ================================
+        try
+        {
+            aggression = checked((byte)(aggression - democracyModifier));
+            Console.WriteLine(aggression);
+        }
+        catch (OverflowException)
+        {
+            Console.WriteLine("AAAH! EXCEPTION!");
+        }
+        //============================ double ================================
+        double myDouble = 0.0 / 0.0; //NaN – Not a Number
+        Console.WriteLine(double.IsNaN(myDouble)); //True
+        double myDouble1 = 1.0 / 0.0; //Infinity
+        Console.WriteLine(double.IsInfinity(myDouble1)); //True
+        Console.WriteLine(double.MaxValue + double.MaxValue); //Infinity 
+        //============================ decimal ================================
+        decimal myDecimal = decimal.MaxValue;
+        decimal myDecimal1 = decimal.MaxValue;
+        Console.WriteLine(unchecked(myDecimal + myDecimal1)); //ALWAYS throws an exception for decimal 
     }
 }
