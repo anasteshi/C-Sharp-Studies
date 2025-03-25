@@ -1,0 +1,15 @@
+/Users/anastasiiakholodiuk/Desktop/BroCode/Enum/bin/Debug/net9.0/Enum
+/Users/anastasiiakholodiuk/Desktop/BroCode/Enum/bin/Debug/net9.0/Enum.deps.json
+/Users/anastasiiakholodiuk/Desktop/BroCode/Enum/bin/Debug/net9.0/Enum.runtimeconfig.json
+/Users/anastasiiakholodiuk/Desktop/BroCode/Enum/bin/Debug/net9.0/Enum.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/Enum/bin/Debug/net9.0/Enum.pdb
+/Users/anastasiiakholodiuk/Desktop/BroCode/Enum/obj/Debug/net9.0/Enum.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anastasiiakholodiuk/Desktop/BroCode/Enum/obj/Debug/net9.0/Enum.AssemblyInfoInputs.cache
+/Users/anastasiiakholodiuk/Desktop/BroCode/Enum/obj/Debug/net9.0/Enum.AssemblyInfo.cs
+/Users/anastasiiakholodiuk/Desktop/BroCode/Enum/obj/Debug/net9.0/Enum.csproj.CoreCompileInputs.cache
+/Users/anastasiiakholodiuk/Desktop/BroCode/Enum/obj/Debug/net9.0/Enum.sourcelink.json
+/Users/anastasiiakholodiuk/Desktop/BroCode/Enum/obj/Debug/net9.0/Enum.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/Enum/obj/Debug/net9.0/refint/Enum.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/Enum/obj/Debug/net9.0/Enum.pdb
+/Users/anastasiiakholodiuk/Desktop/BroCode/Enum/obj/Debug/net9.0/Enum.genruntimeconfig.cache
+/Users/anastasiiakholodiuk/Desktop/BroCode/Enum/obj/Debug/net9.0/ref/Enum.dll

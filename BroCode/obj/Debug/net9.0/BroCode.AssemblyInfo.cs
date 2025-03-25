@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BroCode")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+175c8485350e48f55549a93bc2f667131332eecf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8200bf688b5b496054051e77fd00fb5adac82675")]
 [assembly: System.Reflection.AssemblyProductAttribute("BroCode")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BroCode")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

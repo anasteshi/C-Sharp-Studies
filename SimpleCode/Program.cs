@@ -1116,9 +1116,6 @@ class Program
         Console.WriteLine(a < b); //False
         Console.WriteLine(a > b); //False
         Console.WriteLine(result); 
-        
-
-
     }
     
 }

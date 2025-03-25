@@ -18,7 +18,7 @@ class Program
     }
     
     
-    //for speed test
+                                //for speed test
 
     struct MyStruct
     {
