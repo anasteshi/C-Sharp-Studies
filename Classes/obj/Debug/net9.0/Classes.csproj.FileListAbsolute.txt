@@ -1,0 +1,15 @@
+/Users/anastasiiakholodiuk/Desktop/BroCode/Classes/bin/Debug/net9.0/Classes
+/Users/anastasiiakholodiuk/Desktop/BroCode/Classes/bin/Debug/net9.0/Classes.deps.json
+/Users/anastasiiakholodiuk/Desktop/BroCode/Classes/bin/Debug/net9.0/Classes.runtimeconfig.json
+/Users/anastasiiakholodiuk/Desktop/BroCode/Classes/bin/Debug/net9.0/Classes.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/Classes/bin/Debug/net9.0/Classes.pdb
+/Users/anastasiiakholodiuk/Desktop/BroCode/Classes/obj/Debug/net9.0/Classes.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anastasiiakholodiuk/Desktop/BroCode/Classes/obj/Debug/net9.0/Classes.AssemblyInfoInputs.cache
+/Users/anastasiiakholodiuk/Desktop/BroCode/Classes/obj/Debug/net9.0/Classes.AssemblyInfo.cs
+/Users/anastasiiakholodiuk/Desktop/BroCode/Classes/obj/Debug/net9.0/Classes.csproj.CoreCompileInputs.cache
+/Users/anastasiiakholodiuk/Desktop/BroCode/Classes/obj/Debug/net9.0/Classes.sourcelink.json
+/Users/anastasiiakholodiuk/Desktop/BroCode/Classes/obj/Debug/net9.0/Classes.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/Classes/obj/Debug/net9.0/refint/Classes.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/Classes/obj/Debug/net9.0/Classes.pdb
+/Users/anastasiiakholodiuk/Desktop/BroCode/Classes/obj/Debug/net9.0/Classes.genruntimeconfig.cache
+/Users/anastasiiakholodiuk/Desktop/BroCode/Classes/obj/Debug/net9.0/ref/Classes.dll

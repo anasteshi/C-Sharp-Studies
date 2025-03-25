@@ -47,7 +47,7 @@ class Program
         Console.WriteLine((DayOfWeek)3); //explicit conversion to enum DayOfWeek
         DayOfWeek nextDay = GetNextDayOfWeek(day);
         Console.WriteLine(nextDay);
-        //=========================
+        //==================================================
         DayOfWeek dayOfWeek;
         byte number = 5; //but the enum doesn't have a value for 53
         // dayOfWeek = (DayOfWeek)number;
@@ -66,8 +66,5 @@ class Program
         string str = Console.ReadLine();
         Color color = (Color)System.Enum.Parse(typeof(Color), str, true);
         Console.WriteLine(color);
-
     }
-
-    
 }
