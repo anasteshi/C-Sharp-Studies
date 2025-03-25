@@ -1012,34 +1012,34 @@ class Program
                                     //delete an array
                                     
                                     
-        int[] array = { 2, 1, 5, 23 };
-        DeleteElement(ref array, 2);
+        // int[] array = { 2, 1, 5, 23 };
+        // DeleteElement(ref array, 2);
         
         
                                     //implicit and explicit type conversion
 
 
-        int a = 5;
-        float b = a;
+        // int a = 5;
+        // float b = a;
         //==========
-        double c = 4.6;
-        float d = (float)c; //explicit conversion
+        // double c = 4.6;
+        // float d = (float)c; //explicit conversion
                             //float d = c doesn't work bc float has smaller range than double
         //===================================================================================
-        int e = 3;
-        byte f = (byte)e; //byte is smaller than int
+        // int e = 3;
+        // byte f = (byte)e; //byte is smaller than int
         //==========================================
-        byte g = 234;
-        int h = g; //ok 
+        // byte g = 234;
+        // int h = g; //ok 
         //=============
-        int i = 3;
-        bool j = Convert.ToBoolean(i); //if 0 is false else true
+        // int i = 3;
+        // bool j = Convert.ToBoolean(i); //if 0 is false else true
         //======================================================
-        int k = 23;
-        float l = 2.3F;
-        float result = k + l; //OK
+        // int k = 23;
+        // float l = 2.3F;
+        // float result = k + l; //OK
         //but=====================
-        int result1 = (int)(k + l); //or k + (int)l
+        // int result1 = (int)(k + l); //or k + (int)l
 
 
                                     //arithmetic overflow / overflow – nuclear Gandhi
@@ -1050,19 +1050,19 @@ class Program
         // aggresion = (byte)(aggresion - democracyModifier); //explicit conversion
         // Console.WriteLine(aggresion);
         //================================
-        int max = int.MaxValue;
-        max++;
-        Console.WriteLine(max);
-        int min = int.MinValue;
-        min--;
-        Console.WriteLine(min);
+        // int max = int.MaxValue;
+        // max++;
+        // Console.WriteLine(max);
+        // int min = int.MinValue;
+        // min--;
+        // Console.WriteLine(min);
         //=====================
         //but if enable arithmetic overflow in proj build settings, there'll be an exception instead
         //tho it significantly slows down the process
         //instead might do this:
         //============================ checked keyword ================================
-        byte aggression = 1;
-        byte democracyModifier = 2;
+        // byte aggression = 1;
+        // byte democracyModifier = 2;
         // aggression = checked((byte)(aggression - democracyModifier)); //checked key word
         //or =========================================================================
         // checked
@@ -1077,24 +1077,48 @@ class Program
         // }
         // Console.WriteLine(aggression);
         //============================ try catch ================================
-        try
-        {
-            aggression = checked((byte)(aggression - democracyModifier));
-            Console.WriteLine(aggression);
-        }
-        catch (OverflowException)
-        {
-            Console.WriteLine("AAAH! EXCEPTION!");
-        }
+        // try
+        // {
+        //     aggression = checked((byte)(aggression - democracyModifier));
+        //     Console.WriteLine(aggression);
+        // }
+        // catch (OverflowException)
+        // {
+        //     Console.WriteLine("AAAH! EXCEPTION!");
+        // }
         //============================ double ================================
-        double myDouble = 0.0 / 0.0; //NaN – Not a Number
-        Console.WriteLine(double.IsNaN(myDouble)); //True
-        double myDouble1 = 1.0 / 0.0; //Infinity
-        Console.WriteLine(double.IsInfinity(myDouble1)); //True
-        Console.WriteLine(double.MaxValue + double.MaxValue); //Infinity 
+        // double myDouble = 0.0 / 0.0; //NaN – Not a Number
+        // Console.WriteLine(double.IsNaN(myDouble)); //True
+        // double myDouble1 = 1.0 / 0.0; //Infinity
+        // Console.WriteLine(double.IsInfinity(myDouble1)); //True
+        // Console.WriteLine(double.MaxValue + double.MaxValue); //Infinity 
         //============================ decimal ================================
-        decimal myDecimal = decimal.MaxValue;
-        decimal myDecimal1 = decimal.MaxValue;
-        Console.WriteLine(unchecked(myDecimal + myDecimal1)); //ALWAYS throws an exception for decimal 
+        // decimal myDecimal = decimal.MaxValue;
+        // decimal myDecimal1 = decimal.MaxValue;
+        // Console.WriteLine(unchecked(myDecimal + myDecimal1)); //ALWAYS throws an exception for decimal 
+        
+        
+                                    //nullable
+
+                                    
+        string string1 = null;
+        int? a = null; //now it's nullable
+        Console.WriteLine(a.HasValue); //False
+        Console.WriteLine(a == null); //True
+        Console.WriteLine(a.GetValueOrDefault()); //0
+        Console.WriteLine(a.GetValueOrDefault(10)); //10
+        Console.WriteLine(a ?? 10); //same thing 10
+        // Console.WriteLine(a.Value); //exception, might need a try catch
+        int b = 3;
+        // int result = a + b; doesnt work
+        int? result = a + b; //null if a == null, b != null
+        Console.WriteLine(a == b); //False if one variable is null
+        Console.WriteLine(a < b); //False
+        Console.WriteLine(a > b); //False
+        Console.WriteLine(result); 
+        
+
+
     }
+    
 }
