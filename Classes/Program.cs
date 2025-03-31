@@ -46,10 +46,12 @@ class Program
         // car.PrintSpeed();
         
         
+        
         Point point = new Point(3,5);
         Point point1 = new Point();
 
 
+        
         Student student = new Student("Anastasiia", "Kholodiuk", 18, new DateTime(2006,12,23) );
 
         Student student1 = new Student(student); //copies values to student1
@@ -63,6 +65,23 @@ class Program
         student1.PrintStudent();
         Console.WriteLine();
         student2.PrintStudent();
+        
+        
+        
+        MyPoint myPoint = new MyPoint();
+        
+        // myPoint.Y = 3; //is not possible cuz set accessor is private
+        //but
+        int y = myPoint.Y; //it is, because get is public
+        Console.WriteLine(y);
+
+        myPoint.Z = 4;
+        // int z = myPoint.Z; //get is private
+        
+        myPoint.Set(23);
+        myPoint.GetX();
+
+
 
     } 
 }
