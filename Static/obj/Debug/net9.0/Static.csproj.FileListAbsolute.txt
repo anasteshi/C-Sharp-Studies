@@ -1,0 +1,15 @@
+/Users/anastasiiakholodiuk/Desktop/BroCode/Static/bin/Debug/net9.0/Static
+/Users/anastasiiakholodiuk/Desktop/BroCode/Static/bin/Debug/net9.0/Static.deps.json
+/Users/anastasiiakholodiuk/Desktop/BroCode/Static/bin/Debug/net9.0/Static.runtimeconfig.json
+/Users/anastasiiakholodiuk/Desktop/BroCode/Static/bin/Debug/net9.0/Static.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/Static/bin/Debug/net9.0/Static.pdb
+/Users/anastasiiakholodiuk/Desktop/BroCode/Static/obj/Debug/net9.0/Static.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anastasiiakholodiuk/Desktop/BroCode/Static/obj/Debug/net9.0/Static.AssemblyInfoInputs.cache
+/Users/anastasiiakholodiuk/Desktop/BroCode/Static/obj/Debug/net9.0/Static.AssemblyInfo.cs
+/Users/anastasiiakholodiuk/Desktop/BroCode/Static/obj/Debug/net9.0/Static.csproj.CoreCompileInputs.cache
+/Users/anastasiiakholodiuk/Desktop/BroCode/Static/obj/Debug/net9.0/Static.sourcelink.json
+/Users/anastasiiakholodiuk/Desktop/BroCode/Static/obj/Debug/net9.0/Static.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/Static/obj/Debug/net9.0/refint/Static.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/Static/obj/Debug/net9.0/Static.pdb
+/Users/anastasiiakholodiuk/Desktop/BroCode/Static/obj/Debug/net9.0/Static.genruntimeconfig.cache
+/Users/anastasiiakholodiuk/Desktop/BroCode/Static/obj/Debug/net9.0/ref/Static.dll
