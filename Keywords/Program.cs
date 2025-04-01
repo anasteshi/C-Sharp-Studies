@@ -2,6 +2,24 @@
 
 namespace Keywords;
 
+class MyClass
+{
+    public int x;
+    public static int y;
+
+    public void SetY(int y)
+    {
+        // y = y; //no!
+        // this.y = y; //cant use this because y is static
+        MyClass.y = y; //ok!
+    }
+
+    public void PrintY()
+    {
+        Console.WriteLine(y);
+    }
+}
+
 class Program
 {
     static void Foo(ref int value)
@@ -134,11 +152,25 @@ class Program
                                     //named parameters
                                     
                                     
-        Subtract(b:8, a:2); //the order doesn't matter
-        Subtract(b:4, a:10, enableLogging:true);
-        //======================================
-        int firstValue = 34;
-        int secondValue = 50;
-        Subtract(secondValue, firstValue, enableLogging:true); //easy to see what some variables are meant to store 
+        // Subtract(b:8, a:2); //the order doesn't matter
+        // Subtract(b:4, a:10, enableLogging:true);
+        // //======================================
+        // int firstValue = 34;
+        // int secondValue = 50;
+        // Subtract(secondValue, firstValue, enableLogging:true); //easy to see what some variables are meant to store 
+        
+        
+                                    //static keyword
+                                    
+                                    
+        MyClass a = new MyClass();
+        MyClass b = new MyClass();
+        a.x = 10;
+        b.x = 5;
+        // a.y = 20; //cannot be executed because y field is static
+        MyClass.y = 3; //we can set value y for the whole class tho
+        a.SetY(12);
+        b.PrintY(); //same output for a and b because y is a static field
+        
     }
 } 
