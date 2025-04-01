@@ -1,5 +1,22 @@
 ﻿namespace Static;
 
+class MyClass
+{
+    public MyClass()
+    {
+        Console.WriteLine("Constructor");
+    }
+
+    static MyClass()
+    {
+        Console.WriteLine("Static constructor");
+    }
+
+    public static void Print()
+    {
+        Console.WriteLine("Method");
+    }
+}
 class ClassTest
 {
     public ClassTest()
@@ -78,5 +95,17 @@ class Program
         // ClassTest.Counter = -100000;
         //made for encapsulation
         Console.WriteLine(ClassTest.GetCounter());
+        //########################################
+        // MyClass myClass = new MyClass(); //first static constructor
+        // new MyClass(); //then default constructor 
+        // new MyClass();
+        // new MyClass();
+        // Console.WriteLine();
+        //##################
+        MyClass.Print(); //if just this method, tho it's static, the static ctor will be displayed first
+        //so basically a static ctor will be executed once and at the very start
+        //######################################################################
+        DbRepository d = new DbRepository();
+        d.GetData();
     }
 }
