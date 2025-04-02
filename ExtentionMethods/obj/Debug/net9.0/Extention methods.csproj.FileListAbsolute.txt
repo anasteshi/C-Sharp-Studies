@@ -1,0 +1,15 @@
+/Users/anastasiiakholodiuk/Desktop/BroCode/Extention methods/bin/Debug/net9.0/Extention methods
+/Users/anastasiiakholodiuk/Desktop/BroCode/Extention methods/bin/Debug/net9.0/Extention methods.deps.json
+/Users/anastasiiakholodiuk/Desktop/BroCode/Extention methods/bin/Debug/net9.0/Extention methods.runtimeconfig.json
+/Users/anastasiiakholodiuk/Desktop/BroCode/Extention methods/bin/Debug/net9.0/Extention methods.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/Extention methods/bin/Debug/net9.0/Extention methods.pdb
+/Users/anastasiiakholodiuk/Desktop/BroCode/Extention methods/obj/Debug/net9.0/Extention methods.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anastasiiakholodiuk/Desktop/BroCode/Extention methods/obj/Debug/net9.0/Extention methods.AssemblyInfoInputs.cache
+/Users/anastasiiakholodiuk/Desktop/BroCode/Extention methods/obj/Debug/net9.0/Extention methods.AssemblyInfo.cs
+/Users/anastasiiakholodiuk/Desktop/BroCode/Extention methods/obj/Debug/net9.0/Extention methods.csproj.CoreCompileInputs.cache
+/Users/anastasiiakholodiuk/Desktop/BroCode/Extention methods/obj/Debug/net9.0/Extention methods.sourcelink.json
+/Users/anastasiiakholodiuk/Desktop/BroCode/Extention methods/obj/Debug/net9.0/Extention methods.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/Extention methods/obj/Debug/net9.0/refint/Extention methods.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/Extention methods/obj/Debug/net9.0/Extention methods.pdb
+/Users/anastasiiakholodiuk/Desktop/BroCode/Extention methods/obj/Debug/net9.0/Extention methods.genruntimeconfig.cache
+/Users/anastasiiakholodiuk/Desktop/BroCode/Extention methods/obj/Debug/net9.0/ref/Extention methods.dll
