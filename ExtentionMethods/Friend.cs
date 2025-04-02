@@ -9,7 +9,7 @@ public class Friend
     private string _email;
     public string Email
     {
-        get
+        private get
         {
             return _email;
         }
@@ -19,12 +19,7 @@ public class Friend
         }
     }
 
-    private uint _age;
-    public uint Age
-    {
-        get => _age;
-        set => _age = value;
-    }
+    public uint Age { get; set; }
 
     private string _hobby { get; set; }
 
