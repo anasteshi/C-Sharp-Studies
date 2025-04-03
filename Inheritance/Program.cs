@@ -28,5 +28,11 @@ class Program
         Wolf wolf = new Wolf("Sonya", 10);
         Animal[] animals = {cat, dog, wolf};
         PrintAll(animals);
+        //#########################################
+        Point2D point2D = new (10, 20);
+        Point3D point3D = new (4, 120, 30);
+        point2D.Print();
+        point3D.Print3D();
+        
     }
 }
