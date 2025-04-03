@@ -1,0 +1,15 @@
+/Users/anastasiiakholodiuk/Desktop/BroCode/Inheritance/bin/Debug/net9.0/Inheritance
+/Users/anastasiiakholodiuk/Desktop/BroCode/Inheritance/bin/Debug/net9.0/Inheritance.deps.json
+/Users/anastasiiakholodiuk/Desktop/BroCode/Inheritance/bin/Debug/net9.0/Inheritance.runtimeconfig.json
+/Users/anastasiiakholodiuk/Desktop/BroCode/Inheritance/bin/Debug/net9.0/Inheritance.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/Inheritance/bin/Debug/net9.0/Inheritance.pdb
+/Users/anastasiiakholodiuk/Desktop/BroCode/Inheritance/obj/Debug/net9.0/Inheritance.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anastasiiakholodiuk/Desktop/BroCode/Inheritance/obj/Debug/net9.0/Inheritance.AssemblyInfoInputs.cache
+/Users/anastasiiakholodiuk/Desktop/BroCode/Inheritance/obj/Debug/net9.0/Inheritance.AssemblyInfo.cs
+/Users/anastasiiakholodiuk/Desktop/BroCode/Inheritance/obj/Debug/net9.0/Inheritance.csproj.CoreCompileInputs.cache
+/Users/anastasiiakholodiuk/Desktop/BroCode/Inheritance/obj/Debug/net9.0/Inheritance.sourcelink.json
+/Users/anastasiiakholodiuk/Desktop/BroCode/Inheritance/obj/Debug/net9.0/Inheritance.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/Inheritance/obj/Debug/net9.0/refint/Inheritance.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/Inheritance/obj/Debug/net9.0/Inheritance.pdb
+/Users/anastasiiakholodiuk/Desktop/BroCode/Inheritance/obj/Debug/net9.0/Inheritance.genruntimeconfig.cache
+/Users/anastasiiakholodiuk/Desktop/BroCode/Inheritance/obj/Debug/net9.0/ref/Inheritance.dll
