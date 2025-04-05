@@ -14,6 +14,29 @@ class Program
             animal.Print();
         }
     }
+
+    static void Foo(object obj)
+    {
+        Point2D point = obj as Point2D; 
+        if (point != null)
+        {
+            point.Print();
+        }
+    }
+
+    static void Bar(object obj)
+    {
+        // if (obj is Point2D)
+        // {
+        //    Point2D point = (Point2D)obj; 
+        //    point.Print();
+        // }
+
+        if (obj is Point2D point2D)
+        {
+            point2D.Print();
+        }
+    }
     
     static void Main(string[] args)
     {
@@ -34,5 +57,18 @@ class Program
         point2D.Print();
         point3D.Print3D();
         
+        
+                                    //as in keywords
+
+
+        MyClass obj = new Point2D(3, 5);
+        object obj1 = new Point2D(3, 5);
+        Point2D obj2 = (Point2D)obj1;
+        obj2.Print();
+        object a = "Hello";
+        object b = 10;
+        
+        Foo(obj);
+        Bar(obj);
     }
 }

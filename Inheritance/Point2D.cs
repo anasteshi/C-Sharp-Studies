@@ -1,6 +1,6 @@
 namespace Inheritance;
 
-public class Point2D
+public class Point2D:MyClass
 {
     private int X { get; set; }
     private int Y { get; set; }
