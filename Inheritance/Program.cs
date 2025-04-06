@@ -17,7 +17,7 @@ class Program
 
     static void Foo(object obj)
     {
-        Point2D point = obj as Point2D; 
+        Point2D point = obj as Point2D; //but this way there'll be no exception
         if (point != null)
         {
             point.Print();
@@ -63,12 +63,24 @@ class Program
 
         MyClass obj = new Point2D(3, 5);
         object obj1 = new Point2D(3, 5);
-        Point2D obj2 = (Point2D)obj1;
+        Point2D obj2 = (Point2D)obj1; //throws an exception 
         obj2.Print();
         object a = "Hello";
         object b = 10;
         
         Foo(obj);
         Bar(obj);
+        
+        
+                                    //protected keyword
+        
+        
+        A variable = new A();
+        Console.WriteLine(variable.publicField); //ok
+        // Console.WriteLine(variable.privateField); not ok, same for protected
+        B variable2 = new B();
+        Console.WriteLine(variable2.publicField); //ok
+        // Console.WriteLine(variable2.privateField); nah
+        variable2.Print();
     }
 }
