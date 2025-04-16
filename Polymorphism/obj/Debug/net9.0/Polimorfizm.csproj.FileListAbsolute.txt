@@ -1,0 +1,15 @@
+/Users/anastasiiakholodiuk/Desktop/BroCode/Polimorfizm/bin/Debug/net9.0/Polimorfizm
+/Users/anastasiiakholodiuk/Desktop/BroCode/Polimorfizm/bin/Debug/net9.0/Polimorfizm.deps.json
+/Users/anastasiiakholodiuk/Desktop/BroCode/Polimorfizm/bin/Debug/net9.0/Polimorfizm.runtimeconfig.json
+/Users/anastasiiakholodiuk/Desktop/BroCode/Polimorfizm/bin/Debug/net9.0/Polimorfizm.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/Polimorfizm/bin/Debug/net9.0/Polimorfizm.pdb
+/Users/anastasiiakholodiuk/Desktop/BroCode/Polimorfizm/obj/Debug/net9.0/Polimorfizm.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anastasiiakholodiuk/Desktop/BroCode/Polimorfizm/obj/Debug/net9.0/Polimorfizm.AssemblyInfoInputs.cache
+/Users/anastasiiakholodiuk/Desktop/BroCode/Polimorfizm/obj/Debug/net9.0/Polimorfizm.AssemblyInfo.cs
+/Users/anastasiiakholodiuk/Desktop/BroCode/Polimorfizm/obj/Debug/net9.0/Polimorfizm.csproj.CoreCompileInputs.cache
+/Users/anastasiiakholodiuk/Desktop/BroCode/Polimorfizm/obj/Debug/net9.0/Polimorfizm.sourcelink.json
+/Users/anastasiiakholodiuk/Desktop/BroCode/Polimorfizm/obj/Debug/net9.0/Polimorfizm.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/Polimorfizm/obj/Debug/net9.0/refint/Polimorfizm.dll
+/Users/anastasiiakholodiuk/Desktop/BroCode/Polimorfizm/obj/Debug/net9.0/Polimorfizm.pdb
+/Users/anastasiiakholodiuk/Desktop/BroCode/Polimorfizm/obj/Debug/net9.0/Polimorfizm.genruntimeconfig.cache
+/Users/anastasiiakholodiuk/Desktop/BroCode/Polimorfizm/obj/Debug/net9.0/ref/Polimorfizm.dll
